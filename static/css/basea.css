@@ -7,22 +7,20 @@ html {
   }
 
 body {
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */
+    /* color: #555; */
     font-family: 'Lato';
 }
 
-#topnav {
-    
-}
-
-#logo {
+/* #logo {
     position:fixed;
     top:0;
     left:0;
     width:25.5%;
-}
+} */
+
+/* Base */
 
 .logo-f{
     font-family: 'Playfair Display', serif;
@@ -31,6 +29,7 @@ body {
 .banner {
     padding: 2% 0;
     border: 1px solid black;
+    background-color: white;
 }
 
 .bg-color {
@@ -78,7 +77,79 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+    border-radius: 0;
 }
+
+.nav-dropdown {
+    padding: 0 !important;
+}
+
+/* Home */
+
+.white-container {
+    background-color: white;
+    padding: 7%;
+}
+
+.newsletter {
+    padding: 14%;
+}
+
+.image-border {
+    border: 2px solid black;
+}
+
+.home-img {
+    padding-left: 7%;
+    margin: 2% 0;
+}
+
+.img-left img{
+    position: relative;
+  	z-index:1;
+}
+
+.img-right img{
+    position:relative;
+  	z-index:1;
+}
+
+.overlay p{ 
+    text-align: center;
+    margin-top: 40%;
+}
+
+.overlay{
+	position: absolute;
+    z-index: 2;
+    top: 0;
+    opacity: 0;
+    color: black;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.img-left:hover .overlay{
+	opacity:0.5;
+}
+
+.img-right:hover .overlay{
+	opacity:0.5;
+}
+
+.img-left {
+    position:absolute;
+    bottom: 20%;
+}
+
+.img-right {
+    position:relative;
+    top: 20%;
+}
+
+
 
 /* -------------------------------- Media Queries */
 

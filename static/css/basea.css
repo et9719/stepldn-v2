@@ -113,6 +113,14 @@ body {
     margin-bottom: 5%;
 }
 
+/* product details */
+
+.desc {
+    position:relative;
+    bottom: 10%;
+    left: 15%;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

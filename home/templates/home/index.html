@@ -11,39 +11,28 @@
         <div class="col white-container "></div>
     </div>
     <div class="row bg-color">
-        <div class="col-lg-6 col-sm-12 home-img">
-            <a href="#" class="img-left">
-                <img class="image-border " src="../media/mens-shoes.png" alt="mens shoes home page image">
-                <div class="overlay">
-                    <p>Mens Shoes</p>
-                </div>
-            </a>
-        </div> 
-        <div class="col-lg-6 col-sm-12 home-img">
-            <a href="#" class="img-right">
-                <img class="image-border" src="../media/womens-shoes.png" alt="womens shoes home page image">
-                <div class="overlay">
-                    <p>Womens Shoes</p>
-                </div>
+        <div class="col-lg-6 col-sm-12 margin-btm ">
+            <a href="{% url 'products' %}">
+                <img class="image-border home-img img-up" src="../media/home-img2.png" alt="mens shoes home page image">
             </a>
         </div>
-        <div class="col-lg-6 col-sm-12 home-img">
-            <a href="#" class="img-left">
-                <img class="image-border" src="../media/childrens-shoes.png" alt="childrens shoes home page image">
-                <div class="overlay">
-                    <p>Childrens Shoes</p>
-                </div>
+        <div class="col-lg-6 col-sm-12 margin-btm ">
+            <a href="{% url 'products' %}">
+                <img class="image-border home-img img-down" src="../media/home-img1.png" alt="womens shoes home page image">
             </a>
         </div>
-        <div class="col-lg-6 col-sm-12 home-img">
-            <a href="#" class="img-right">
-                <img class="image-border" src="../media/shoe-accessories.png" alt="shoe accessories home page image">
-                <div class="overlay">
-                    <p>Shoe Accessories</p>
-                </div>
+        <div class="col-lg-6 col-sm-12">
+            <a href="{% url 'products' %}">
+                <img class="image-border home-img img-up" src="../media/home-img4.png" alt="childrens shoes home page image">
+            </a>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <a href="{% url 'products' %}">
+                <img class="image-border home-img img-down" src="../media/home-img3.png" alt="accessories home page image">
             </a>
         </div>
     </div>
+
     <div class="row">
         <div class="col newsletter">
             <h1 class="text-center"> INSERT NEWS LETTER HERE!</h1>

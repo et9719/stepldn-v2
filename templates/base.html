@@ -112,8 +112,8 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-black" aria-labelledby="user-options">
-                            <a href="{% url 'products' %}" class="dropdown-item">Trainers</a>
-                            <a href="#" class="dropdown-item">Flipflops</a>
+                            <a href="{% url 'products' %}?category=mens_trainers" class="dropdown-item">Trainers</a>
+                            <a href="{% url 'products' %}?category=mens_flipflops" class="dropdown-item">Flipflops</a>
                             <a href="#" class="dropdown-item">ect...</a>
                         </div>
                     </div>
@@ -125,8 +125,8 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-black" aria-labelledby="user-options">
-                            <a href="#" class="dropdown-item">Trainers</a>
-                            <a href="#" class="dropdown-item">Flipflops</a>
+                            <a href="{% url 'products' %}?category=womens_trainers" class="dropdown-item">Trainers</a>
+                            <a href="{% url 'products' %}?category=womens_flipflops" class="dropdown-item">Flipflops</a>
                             <a href="#" class="dropdown-item">ect...</a>
                         </div>
                     </div>
@@ -138,8 +138,8 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-black" aria-labelledby="user-options">
-                            <a href="#" class="dropdown-item">Trainers</a>
-                            <a href="#" class="dropdown-item">Flipflops</a>
+                            <a href="{% url 'products' %}?category=childrens_trainers" class="dropdown-item">Trainers</a>
+                            <a href="{% url 'products' %}?category=childrens_flipflops" class="dropdown-item">Flipflops</a>
                             <a href="#" class="dropdown-item">ect...</a>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-black" aria-labelledby="user-options">
-                            <a href="#" class="dropdown-item">Trainers</a>
+                            <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Trainers</a>
                             <a href="#" class="dropdown-item">Flipflops</a>
                             <a href="#" class="dropdown-item">ect...</a>
                         </div>

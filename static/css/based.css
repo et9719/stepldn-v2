@@ -57,10 +57,10 @@ body {
     color: black;
 }
 
-/* .btn-black {
+.btn-black {
     background: black;
     color: white;
-} */
+} 
 
 .site-button:hover,
 .site-button:active,
@@ -80,7 +80,9 @@ body {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 

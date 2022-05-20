@@ -36,6 +36,21 @@
     border: 1px solid #000;
 }
 
-/* pk_test_51KlwZ9BCsbtyKtROycXPJsENXGhAb5ZBxzQFOryMRq3JdBgAEmUXEaxKGTVnHyzOfRUNqqsBTXqvDP4QBVRFVkCC00ZQCpth9x
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 162, 184, .85);
+    z-index: 9999;
+}
 
-sk_test_51KlwZ9BCsbtyKtROIjKDaHufFXocafoD3tEYN56YZuZmo1NcvJCZmpi0mV8xbR4HjWZT5ud2tdnZyi0DTDMtGpkb00GIJU5aQN */
+.loading-spinner {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}

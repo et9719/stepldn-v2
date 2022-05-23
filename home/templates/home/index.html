@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col white-container ">
             <!-- temp -->
-            <div class="nav-item dropdown">
+            <!-- <div class="nav-item dropdown">
                 <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     All Products
                 </a>
@@ -20,28 +20,28 @@
                     <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                     <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 </div>
-            </div>
+            </div> -->
             <!-- end temp -->
         </div>
     </div>
     <div class="row bg-color">
         <div class="col-lg-6 col-sm-12 margin-btm ">
-            <a href="{% url 'products' %}">
+            <a href="{% url 'products' %}?category=mens_trainers,mens_flipflops">
                 <img class="image-border home-img img-up" src="../media/home-img2.png" alt="mens shoes home page image">
             </a>
         </div>
         <div class="col-lg-6 col-sm-12 margin-btm ">
-            <a href="{% url 'products' %}">
+            <a href="{% url 'products' %}?category=womens_trainers,womens_flipflops">
                 <img class="image-border home-img img-down" src="../media/home-img1.png" alt="womens shoes home page image">
             </a>
         </div>
         <div class="col-lg-6 col-sm-12">
-            <a href="{% url 'products' %}">
+            <a href="{% url 'products' %}?category=childrens_trainers,childrens_flipflops">
                 <img class="image-border home-img img-up" src="../media/home-img4.png" alt="childrens shoes home page image">
             </a>
         </div>
         <div class="col-lg-6 col-sm-12">
-            <a href="{% url 'products' %}">
+            <a href="{% url 'products' %}?category=accessories">
                 <img class="image-border home-img img-down" src="../media/home-img3.png" alt="accessories home page image">
             </a>
         </div>

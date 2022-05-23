@@ -5,17 +5,33 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
-
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
-
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
-
-
+    <div class="container header-container">
+        <div class="row white-container">
+            <div class=""></div>
+        </div>
+        <div class="row bg-color">
+            <div class="col-8 text-center box-container box-left">
+                <h1 class="logo-f">{% trans "Sign Out" %}</h1>
+                <br>
+                <p>{% trans 'Are you sure you want to sign out?' %}</p>
+                <br>
+                <form method="post" action="{% url 'account_logout' %}">
+                    {% csrf_token %}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                    {% endif %}
+                    <button class="btn btn-outline-black rounded-0 btn-lg long-btn" type="submit">YES, {% trans 'SIGN OUT' %} &raquo;</button>
+                </form>
+                <br>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg long-btn">
+                    <span class="text-uppercase">No, Continue Shopping</span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col newsletter">
+                <h1 class="text-center"> INSERT NEWS LETTER HERE!</h1>
+            </div>
+        </div>
+    </div>
 {% endblock %}

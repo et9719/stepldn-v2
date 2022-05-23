@@ -27,14 +27,27 @@ body {
     text-align: center !important; 
 }
 
+.long-btn {
+    width: 80%;
+}
+
+.register a {
+    width: 50%;
+}
+
+.register p {
+    padding: 0 2% 0 12%;
+}
+
 .banner {
     padding: 2% 0;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: white;
 }
 
 .bg-color {
     background-color: wheat;
+    border: 2px solid black;
 }
 
 /* from Bulma */
@@ -53,7 +66,7 @@ body {
 
 .site-button {
     background-color: lightgray;
-    border: 1px solid black;
+    border: 2px solid black;
     color: black;
 }
 
@@ -102,7 +115,7 @@ body {
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .btn-outline-black:hover,
@@ -112,12 +125,42 @@ body {
     color: white !important;
 }
 
-/* Home */
-
 .white-container {
     background-color: white;
     padding: 7%;
 }
+
+.s-white-container {
+    background-color: white;
+    padding: 4%;
+}
+
+.box-container {
+    background: white;
+    border: 2px solid black;
+    padding: 5%;
+}
+
+.box-left{
+    position:relative;
+    left: 25%;
+    bottom: 80px;
+}
+
+.s-box-left{
+    position:relative;
+    left: 15%;
+    bottom: 80px;
+}
+
+.box-up{
+    position:relative;
+    bottom: 80px;
+}
+
+/* Home */
+
+
 
 .newsletter {
     padding: 14%;
@@ -140,6 +183,16 @@ body {
 .margin-btm {
     margin-bottom: 5%;
 }
+
+/* bag */
+
+.bag-img {
+    position:relative;
+    left: 15%;
+    border: 2px solid black;
+    width: 15rem;
+}
+
 
 /* product details */
 

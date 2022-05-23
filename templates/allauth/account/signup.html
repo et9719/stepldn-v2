@@ -5,6 +5,37 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
+
+    <div class="container header-container">
+        <div class="row white-container">
+            <div class=""></div>
+        </div>
+        <div class="row bg-color">
+            <div class="col-8 text-center box-container box-left">
+                <h1 class="logo-f">{% trans "Create A New Account" %}</h1>
+                <br>
+                <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+                <br>
+                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  {% if redirect_field_value %}
+                  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                  {% endif %}
+                  <!-- <button type="submit">{% trans "Sign Up" %} &raquo;</button> -->
+                  <button class="btn btn-outline-black rounded-0 btn-lg long-btn" type="submit">{% trans 'SIGN UP' %} &raquo;</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col newsletter">
+                <h1 class="text-center"> INSERT NEWS LETTER HERE!</h1>
+            </div>
+        </div>
+    </div>
+
+
+
 <h1>{% trans "Sign Up" %}</h1>
 
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>

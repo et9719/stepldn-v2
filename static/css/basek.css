@@ -149,7 +149,7 @@ body {
 
 .s-box-left{
     position:relative;
-    left: 15%;
+    left: 5%;
     bottom: 80px;
 }
 
@@ -190,9 +190,12 @@ body {
     position:relative;
     left: 15%;
     border: 2px solid black;
-    width: 15rem;
+    width: 10rem;
 }
 
+#payment-form {
+    padding-left: 20%;
+}
 
 /* product details */
 

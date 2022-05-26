@@ -1,1 +1,1 @@
-web: gunicorn heroku_cli.wsgi
+web: gunicorn steplondon.wsgi:application

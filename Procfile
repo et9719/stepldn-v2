@@ -1,0 +1,1 @@
+web: gunicorn heroku_cli.wsgi

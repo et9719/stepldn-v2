@@ -387,7 +387,7 @@ html {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8;  text-info 
+	color: #17a2b8;  /* text-info */ 
 }
 
 /* from Bulma */ 

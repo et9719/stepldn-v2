@@ -11,8 +11,7 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row s-white-container">
-    </div>
+    <div class="row s-white-container"></div>
     <div class="row">
         <div class="col text-center mt-3">
             {% for c in current_categories %}
@@ -122,17 +121,18 @@
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 	</script>
     
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);

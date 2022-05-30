@@ -1,0 +1,50 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <div class="col-3 my-auto text-center nav-dropdown">
+        <a class="border-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <p class="my-0 text-black nav-btn">Mens</p>
+                <div><i class="fa-light fa-chevrons-down"></i></div>
+            </div>
+        </a>
+        <div class="dropdown-menu border-black" aria-labelledby="user-options">
+            <a href="{% url 'products' %}?category=mens_trainers,mens_flipflops" class="dropdown-item">All Mens Shoes</a>
+            <a href="{% url 'products' %}?category=mens_trainers" class="dropdown-item">Trainers</a>
+            <a href="{% url 'products' %}?category=mens_flipflops" class="dropdown-item">Flipflops</a>
+        </div>
+    </div>
+    <div class="col-3 my-auto text-center nav-dropdown">
+        <a class="border-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <p class="my-0 text-black nav-btn">Womens</p>
+                <div><i class="fa-light fa-chevrons-down"></i></div>
+            </div>
+        </a>
+        <div class="dropdown-menu border-black" aria-labelledby="user-options">
+            <a href="{% url 'products' %}?category=womens_trainers,womens_flipflops" class="dropdown-item">All Womens Shoes</a>
+            <a href="{% url 'products' %}?category=womens_trainers" class="dropdown-item">Trainers</a>
+            <a href="{% url 'products' %}?category=womens_flipflops" class="dropdown-item">Flipflops</a>     
+        </div>
+    </div>
+    <div class="col-3 my-auto text-center nav-dropdown">
+        <a class="border-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <p class="my-0 text-black nav-btn">Childrens</p>
+                <div><i class="fa-light fa-chevrons-down"></i></div>
+            </div>
+        </a>
+        <div class="dropdown-menu border-black" aria-labelledby="user-options">
+            <a href="{% url 'products' %}?category=childrens_trainers,childrens_flipflops" class="dropdown-item">All Childrens Shoes</a>
+            <a href="{% url 'products' %}?category=childrens_trainers" class="dropdown-item">Trainers</a>
+            <a href="{% url 'products' %}?category=childrens_flipflops" class="dropdown-item">Flipflops</a>
+        </div>
+    </div>
+    <div class="col-3 my-auto text-center nav-dropdown">
+        <a class="border-black nav-link" href="{% url 'products' %}?category=accessories">
+            <div class="text-center">
+                <p class="my-0 text-black nav-btn">Accessories</p>
+                <div><i class="fa-light fa-chevrons-down"></i></div>
+            </div>
+        </a>
+    </div>
+</div>
+

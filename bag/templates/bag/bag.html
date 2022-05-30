@@ -2,30 +2,22 @@
 {% load static %}
 {% load bag_tools %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
 
 {% block content %}
-    <div class="container ">
-        <div class="row s-white-container"></div>
-        <div class="row">
-            <div class="col">
+    <div class="container">
+        <div class="row bag">
+            <div class="col ">
                 <hr>
                 <h2 class="logo-f text-center mb-4">Your Shopping Bag</h2>
                 <hr>
-                <br>
-                <br>
                 <br>
             </div>
         </div>
         <div class="row bg-color">
             {% if bag_items %}
-                <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="col-12 col-md-6">
+                    <br>
+                    <br>
                     {% for item in bag_items %}
                         <div class="box-container s-box-left">
                             <div class="row">
@@ -46,7 +38,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                                 {% csrf_token %}
                                                 <div class="form-group">
@@ -80,7 +72,8 @@
                                             <a class="update-link text-info"><small>Update</small></a>
                                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>  
                                         </div>
-                                        <div class="col-6">
+                                        <br>
+                                        <div class="col-12">
                                             <p class="my-0">  ${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                         </div>
                                     </div>
@@ -90,7 +83,7 @@
                         <br>   
                     {% endfor %}
                 </div>
-                <div class="col-lg-4 col-md-8 col-sm-10 offset-1 ">
+                <div class="col-12 col-md-6 ">
                     <br>
                     <p class="text-muted">Order Summary ({{ product_count }})</p>
                     <div class="row">
@@ -161,13 +154,21 @@
                 </div>
                 <br>            
             {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>   
+                <div class="row">
+                    <div class="col-12">
+                        <p class="lead mb-5">Your bag is empty.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a> 
+                    </div>
+                </div>
             {% endif %}
         </div>
     </div>

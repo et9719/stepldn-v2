@@ -64,3 +64,25 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
+.order-sum {
+    margin-bottom: 20%;
+}
+
+.confirmation-txt {
+    padding-top: 30%;
+}
+
+/* Screens Medium  */
+@media (min-width: 500px) {
+    .confirmation-txt {
+        padding-top: 10%;
+    }
+}
+
+/* Screens Large  */
+@media (min-width: 900px) {
+    .confirmation-txt {
+        padding-top: 5%;
+    }
+}

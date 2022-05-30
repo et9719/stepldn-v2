@@ -3,34 +3,24 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkoutc.css' %}">
-{% endblock %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+    <link rel="stylesheet" href="{% static 'checkout/css/checkoutd.css' %}">
 {% endblock %}
 
 {% block content %}
-    <div class="container header-container">
+    <div class="col white-container"></div>
+    <div class="container">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-f text-center mb-4">Checkout</h2>
+                <h2 class="logo-f text-center mb-4">Your Shopping Bag</h2>
                 <hr>
-                <br>
-                <br>
                 <br>
             </div>
         </div>
-        <br>
 
         
-        <div class="row bg-color">
-            <div class="col-12 col-lg-6 order-lg-last mb-5 box-container box-up offset-1">
+        <div class="order-sum row bg-color">
+            <div class="col-10 col-md-8 order-lg-last mb-5 box-container box-up offset-1">
                 <h1 class="logo-f">Order Summary ({{ product_count }})</h1>
                 <br>
                 <div class="row">
@@ -77,17 +67,8 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
         <div class="row bg-color">
-            <div class="col-8 box-container box-left">
+            <div class="col-10 col-md-8 offset-1 offset-md-2 box-container box-up">
                 <div class="row">    
                     <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}

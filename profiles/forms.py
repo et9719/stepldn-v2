@@ -1,9 +1,12 @@
+''' Imports '''
 from django import forms
 from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    ''' Gets fields needed for user profile form '''
     class Meta:
+        ''' use model UserProfile '''
         model = UserProfile
         exclude = ('user',)
 

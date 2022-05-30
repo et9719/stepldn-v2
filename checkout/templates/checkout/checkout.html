@@ -17,8 +17,6 @@
                 <br>
             </div>
         </div>
-
-        
         <div class="order-sum row bg-color">
             <div class="col-10 col-md-8 order-lg-last mb-5 box-container box-up offset-1">
                 <h1 class="logo-f">Order Summary ({{ product_count }})</h1>
@@ -71,7 +69,7 @@
             <div class="col-10 col-md-8 offset-1 offset-md-2 box-container box-up">
                 <div class="row">    
                     <form action="{% url 'checkout' %}" method="POST" id="payment-form">
-                    {% csrf_token %}
+                        {% csrf_token %}
                         <h1 class="logo-f">Delivery Info</h1>
                         <br>
                         <fieldset class="rounded px-5 mb-5">

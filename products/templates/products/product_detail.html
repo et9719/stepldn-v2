@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-12 col-lg-8 bg-color">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                      {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="detail-img" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -28,7 +28,7 @@
                         </a>
                     {% endif %}
                 </div>
-                <div class="col-6 col-md-3 desc"><p class="">{{ product.description }}</p></div>
+                <div class="col-6 col-md-4 desc"><p class="">{{ product.description }}</p></div>
                 <div class="col-md-3 desc">
                     <p class="font-weight-bold" style="text-align:left">${{ product.price }}</p>
                     {% if request.user.is_superuser %}

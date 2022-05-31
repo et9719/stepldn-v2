@@ -1,9 +1,10 @@
 ''' Imports '''
+from django_summernote.admin import SummernoteModelAdmin
 from django.contrib import admin
 from .models import Product, Category
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(admin.ModelAdmin, SummernoteModelAdmin):
     ''' Define what the site owner should see
     on the products part of the admin page '''
     list_display = (
@@ -16,6 +17,8 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
+
+    summernote_fields = ('description')
 
 
 class CategoryAdmin(admin.ModelAdmin):

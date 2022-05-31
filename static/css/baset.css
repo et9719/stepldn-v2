@@ -130,6 +130,14 @@ html {
     background-color: white;
 }
 
+.t-and-c, .socials {
+    padding-top: 5%;
+}
+
+.contacts {
+    text-align: center;
+    padding-top: 5%;
+}
 /* Home Page */
 .home-img {
     border: 2px solid black;
@@ -182,6 +190,22 @@ html {
 
     .s-white-container {
         padding: 17%;
+    }
+
+    /* Base */
+    .contacts {
+        text-align: right;
+        padding-bottom: 5%;
+        font-size: small;
+    }
+
+    .socials {
+        padding-top: 10%;
+    }
+
+    .t-and-c {
+        padding-top: 10%;
+        font-size: small;
     }
 
     /* Home Page */

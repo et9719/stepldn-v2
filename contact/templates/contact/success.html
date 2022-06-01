@@ -1,0 +1,27 @@
+<h1>Thank you for your inquiry</h1>
+<p>Your contact information and message was successfully submitted.</p>
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profilea.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row bag">
+            <div class="col">
+                <hr>
+                <h2 class="logo-f mb-4">Contact Us!</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row bg-color">
+            <div class="col-md-8 offset-md-1 box-container box-up">
+                <h1>Thank you for your inquiry</h1>
+                <p>Your contact information and message was successfully submitted.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

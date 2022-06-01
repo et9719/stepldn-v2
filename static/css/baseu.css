@@ -138,6 +138,16 @@ html {
     text-align: center;
     padding-top: 5%;
 }
+
+/* Mail Chimp */
+
+#mc_embed_signup {
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif; 
+    width:600px;
+}
+
 /* Home Page */
 .home-img {
     border: 2px solid black;
@@ -206,6 +216,11 @@ html {
     .t-and-c {
         padding-top: 10%;
         font-size: small;
+    }
+
+    .social-a{
+        font-size: xx-large;
+        color: black !important;
     }
 
     /* Home Page */

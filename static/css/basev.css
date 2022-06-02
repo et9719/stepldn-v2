@@ -26,7 +26,7 @@
 } 
 
 
- .site-button {
+.site-button {
     background-color: lightgray;
     border: 2px solid black;
     color: black;
@@ -140,19 +140,32 @@ html {
 }
 
 /* Mail Chimp */
-
+/* 
 #mc_embed_signup {
     background:#fff;
     clear:left;
     font:14px Helvetica,Arial,sans-serif; 
     width:600px;
-}
+} */
 
 /* Home Page */
 .home-img {
     border: 2px solid black;
     width: 80%;
     margin: 10%;
+}
+
+.news {
+    padding: 5%;
+} 
+
+.asterisk {
+    color: red;
+}
+
+.unsub a{
+    color:#6c757d !important;
+    text-decoration: none !important;
 }
 
 /* Details Page */

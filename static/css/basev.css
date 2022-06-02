@@ -168,6 +168,12 @@ html {
     text-decoration: none !important;
 }
 
+/* Unsubscribe */
+
+.unsubscribe-box {
+    margin-bottom: 5%;
+}
+
 /* Details Page */
 .detail-img {
     border: 2px solid black;

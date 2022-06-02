@@ -1,13 +1,33 @@
-<div class="row">
-    <div class="news col-12 col-md-8 offset-md-2">
-        <h3>Unsubscribe</h3>
-        <p>Sign up to our newsletter to get all the latest deals!</p>
-        <div class="text-right"><span class="asterisk">*</span> indicates required</div>
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ form|crispy }}
-            <input class="btn-outline-black" type="submit" value="Subscribe">
-        </form>
-        <br>
-        <small class="unsub"><a href="{% url 'products' %}">I want to unsubscribe</a></small>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+   
+{% endblock %}
+
+{% block content %}
+<div class="container header-container">
+    <div class="row bag">
+        <div class="col ">
+            <hr>
+            <br>
+        </div>
     </div>
+    <div class="unsubscribe-box row bg-color">
+        <div class="col-10 offset-1 col-md-8 box-up box-container">
+            <h3 class="logo-f">Unsubscribe</h3>
+            <br>
+            <p>To unsubscribe to our newsletter, please enter your email address and hit the unsubscribe button.
+                Just remember, you can always re-subscribe if you miss our deals!</p>
+            <div class="text-right"><span class="asterisk">*</span> indicates required</div>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input class="btn-outline-black" type="submit" value="Unsubscribe">
+            </form>
+            <br>
+            <small class="unsub"><a href="{% url 'home' %}">Actually i want to stay subscribed!</a></small>
+        </div>
+    </div>
+</div>
+{% endblock %}

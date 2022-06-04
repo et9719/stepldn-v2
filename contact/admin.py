@@ -2,4 +2,13 @@
 from django.contrib import admin
 from .models import Contact
 
-admin.site.register(Contact)
+
+class ContactAdmin(admin.ModelAdmin):
+    ''' Define what admin should see in contact part of admin page '''
+    list_display = (
+        'subject',
+        'email',
+    )
+
+
+admin.site.register(Contact, ContactAdmin)

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'profiles/css/profilea.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row bag">
+            <div class="col">
+                <hr>
+                <h2 class="logo-f mb-4">Contact Messages</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="unsubscribe-box row bg-color">
+            {% if contacts %}
+                {% for contact in contacts %}
+                <div class="col-md-8 offset-md-1 box-container box-up">
+                    <p>view contact messages</p> 
+                    <p>{{ contact.email }}</p>
+                    <p>{{ contact.subject }}</p>
+                    <p>{{ contact.message }}</p>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="row">
+                    <div class="col-12">
+                        <p class="lead mb-5">You have no messages.</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

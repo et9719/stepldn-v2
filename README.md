@@ -8,20 +8,26 @@
 
 [Click here to go to the live website!](<!-- Insert AmIResponsive image -->) 
 
+## Table of contents
+
 1. [Wireframes](#wireframes)
 2. [User Stories](#user-stories)
 3. [Objectives](#objectives)
 4. [Features](#features)
     - [Navigation Bar](#navigation-bar)
-    - [Links](#links)
-    - [News Posts](#news-posts)
-    - [Gallery Posts](#gallery-posts)
-    - [Comments](#comments)
-    - [Like](#like)
-    - [Message](#message)
-    - [Register](#register)
-    - [Login](#login)
-    - [Logout](#logout)
+    - [Footer](#footer)
+    - [Contact](#contact)
+    - [Newsletter](#newsletter)
+    - [Create Account Feature](#create-account-feature)
+    - [Sign In Feature](#sign-in-feature)
+    - [Sign Out Feature](#sign-out-feature)
+    - [Profile](#profile)
+    - [Order History](#order-history)
+    - [Product Details Feature](#product-details-feature)
+    - [Add Products](#add-products)
+    - [Edit Products](#edit-products)
+    - [Bag Feature](#bag-feature)
+    - [Checkout Feature](#checkout-feature)
 5. [Testing](#testing)
     - [HTML](#html)
     - [CSS](#css)
@@ -39,25 +45,37 @@
 <img src="media/readme_media/navbar-wireframe.png" alt="wireframe for navbar">
 <img src="media/readme_media/footer-wireframe.png" alt="wireframe for footer">
 
+[Table of contents](#table-of-contents)
+
 ### Products
 <img src="media/readme_media/products-wireframe.png" alt="wireframe for products page">
 <img src="media/readme_media/products-mobile1.png" alt="mobile wireframe for products page">
+
+[Table of contents](#table-of-contents)
 
 ### Product Details
 <img src="media/readme_media/product-detail-wireframe.png" alt="wireframe for product details page">
 <img src="media/readme_media/product-detail-mobile1.png" alt="mobile wireframe for product details page">
 
+[Table of contents](#table-of-contents)
+
 ### Create Account
 <img src="media/readme_media/create-wireframe.png" alt="wireframe for create account page">
 <img src="media/readme_media/create-mobile.png" alt="mobile wireframe for create account page">
+
+[Table of contents](#table-of-contents)
 
 ### Sign in 
 <img src="media/readme_media/signin-wireframe.png" alt="wireframe for sign in page">
 <img src="media/readme_media/signin-mobile.png" alt="mobile wireframe for sign in page">
 
+[Table of contents](#table-of-contents)
+
 ### Sign out 
 <img src="media/readme_media/signout-wireframe.png" alt="wireframe for sign out page">
 <img src="media/readme_media/signout-mobile.png" alt="mobile wireframe for sign out page">
+
+[Table of contents](#table-of-contents)
 
 ### My Account
 <img src="media/readme_media/myaccount-wireframe.png" alt="wireframe for account page">
@@ -69,14 +87,20 @@
 
 In the interest of time, I ended up having one page to show both the account details and order history, but would like to impliment the my accounts page as shown in the wireframe along with the seperate my details page and order history page in my own time.
 
+[Table of contents](#table-of-contents)
+
 ### Edit Details
 <img src="media/readme_media/edit-detail-wireframe.png" alt="wireframe for edit detail page">
 <img src="media/readme_media/edit-detail-mobile.png" alt="mobile wireframe for edit detail page">
+
+[Table of contents](#table-of-contents)
 
 ### Bag
 <img src="media/readme_media/cart-wireframe.png" alt="wireframe for bag page">
 <img src="media/readme_media/cart-mobile1.png" alt="mobile wireframe for bag page">
 <img src="media/readme_media/cart-mobile2.png" alt="mobile wireframe for bag page">
+
+[Table of contents](#table-of-contents)
 
 ### Bag
 <img src="media/readme_media/checkout-wireframe1.png" alt="wireframe for checkout page">
@@ -84,6 +108,7 @@ In the interest of time, I ended up having one page to show both the account det
 <img src="media/readme_media/checkout-mobile1.png" alt="mobile wireframe for checkout page">
 <img src="media/readme_media/checkout-mobile2.png" alt="mobile wireframe for checkout page">
 
+[Table of contents](#table-of-contents)
 
 ## User stories
 
@@ -96,6 +121,8 @@ This helped me break the project down into smaller tasks that would be more mana
 <img src="media/readme_media/in-progress.png" alt="user stories in progress">
 <img src="media/readme_media/in-progress2.png" alt="user stories in progress">
 <img src="media/readme_media/done.png" alt="user stories that are almost done">
+
+[Table of contents](#table-of-contents)
 
 ## Objectives
 
@@ -163,69 +190,153 @@ This helped me break the project down into smaller tasks that would be more mana
         - <!-- Not yet. -->
     - How was this achieved?
         <!-- Add this once done -->
+
+[Table of contents](#table-of-contents)
  
 ## Features
 
 ### Navigation Bar
 
-- The navigation bar contains the links needed to use the website easily. This changes how it looks depending on a couple of things, if the user is logged in or out but also depending on the size of the screen it is being viewed on.
-<img src="images/nav.png" alt="Navigation function">
-<img src="images/nav2.png" alt="Navigation function">
-<img src="images/nav3.png" alt="Navigation function">
+- The navigation bar contains the links needed to use the website easily. This changes how it looks depending on the size of the screen it is being viewed on. 
+    - On both the mobile and larger screen versions the brand logo is a link back to the home page. 
+    - There is a search bar for users to search for products. On the mobile version this is in the for of a toggle button, so when you click on the search icon a search bar pops up below. 
+    - The my account button's dropdown changes depending on if the user is loged in or out but also if the user is a site admin it is also slightly different. 
+    When the user is logged in they see my profile and logout, however if the user is a site admin they also see product management. 
+    If the user is logged out they see register and login buttons.
+    - The bag item takes the user to their shopping bag and the number below also changes when items are added to the bag.
+    - each button in the navigation bar has a dropdown that shows more specific categories within each category(mens, womens, childrens) except for accesories as there is one page for all accessories.
+    These buttons cant be seen imediatly on the mobile version of the navigation as the user will have to click on the toggle button to see them, this is to save screen space.
+<img src="media/readme_media/feature-navbar.png" alt="Navigation bar functions">
+<img src="media/readme_media/feature-dropdown.png" alt="Navigation dropdown function">
+<img src="media/readme_media/feature-navbar-mobile.png" alt="Mobile version of the navigation bar functions">
 
-### Links
+[Table of contents](#table-of-contents)
 
-- On the home page I have two links that are used to take the user to the two main pages on the site.
+### Footer
 
-<img src="images/home-func.png" alt="link function">
+- The footer shows at the bottom of every page.
+    - It includes social media links in the form of icons.
+    - Links that lead to the terms & conditions, privacy policy and also a link to the site map.
+    - The footer also has a section for users to contact the site owners in multiple way, via email, phone or also if they follow the 'via the site' link it takes them to a page where they can leave a message for the site owners through the website itsself.
 
-### News Posts
+<img src="media/readme_media/feature-footer.png" alt="Footer functions">
 
-- Each news post contains a link in its title, these links take the user to the relevent news post detail page to read more. 
+[Table of contents](#table-of-contents)
 
-<img src="images/news-func.png" alt="news post function">
+### Contact
 
-### Gallery Posts
+- When the link in the footer is followed to the contact page it brings the user to this form thtat they can submit to the admin. 
 
--  Each gallery post contains a link in its title, these links take the user to the relevant gallery post detail page to read more. 
+<img src="media/readme_media/feature-contact.png" alt="contact function">
 
-<img src="images/gallery-func.png" alt="gallery post function">
+[Table of contents](#table-of-contents)
 
-### Comments
+### Newsletter
 
-- Within each gallery post details page the is a comment section, this allows the user to interact with the site, and have conversations about the art shown.
+-  On the home page there is a form that users can leave there email to sign up for a newsletter.
 
-<img src="images/comment.png" alt="comment function">
+<img src="media/readme_media/feature-newsletter.png" alt="Newsletter function">
 
-### Like
+[Table of contents](#table-of-contents)
 
-- On each gallery post in their details page you have the ability to like or dislike a post
+### Create Account Feature
 
-<img src="images/like.png" alt="like function">
+- When a user clickes on the my account button in the navbar and then clicks on register, it brings them to the create an account page, this is a form for the user to fill out which allows them to create an account so they can keep there details saved and view previous orders.
 
-### Message
+<img src="media/readme_media/feature-create.png" alt="Create account function">
 
-- when a user logs in or out they will see a message pop up and automatically leave after a few seconds.
+[Table of contents](#table-of-contents)
 
-<img src="images/message.png" alt="message function">
+### Sign In Feature
 
-### Register
+- The sign in page allows users to sign into there account if they have already registered.
 
-- The register function allows the user to create a profile so that they can log in and out of the site.
+<img src="media/readme_media/feature-signin.png" alt="Sign in function">
 
-<img src="images/register.png" alt="register function">
+[Table of contents](#table-of-contents)
 
-### Login
+### Sign Out Feature
 
-- The login function allows the user to log into their account so that they can like a post or leave a comment.
+- The sign out page allows users to sign out of there account if they are already signed in.
 
-<img src="images/login.png" alt="login function">
+<img src="media/readme_media/feature-signout.png" alt="Sign out function">
 
-### Logout
+[Table of contents](#table-of-contents)
 
-- the log out function allows the user to sign out after they are finished on the site.
+### Profile
 
-<img src="images/logout.png" alt="logout function">
+- On the my profile page you can view your current saved delivery information, you can also update this by typing your changes into the fields provided anf hitting the update information button
+
+<img src="media/readme_media/feature-profile.png" alt="Profile functions">
+<img src="media/readme_media/feature-profile2.png" alt="Profile function">
+
+[Table of contents](#table-of-contents)
+
+### Order History
+
+- Within the saem page as the profile details, just underneither you can view your oreder history if you have made any previous orders on the same account.
+
+<img src="media/readme_media/feature-order-history.png" alt="Order history function">
+
+[Table of contents](#table-of-contents)
+
+### Product Details Feature
+
+- On the product detail page you can view the individual product, its description and price. 
+    - You can choose the size of the product.
+    - You can choose the quantitiy of the product.
+    - At the bottom of the page you can choose to either add this item to your bag or go back to the products page to view other items.
+
+<img src="media/readme_media/feature-product-details.png" alt="Product detail functions">
+<img src="media/readme_media/feature-product-details2.png" alt="Product detail functions">
+
+[Table of contents](#table-of-contents)
+
+### Add Products
+
+- If the user is a site admin they can add products using the product management page. This page gives the admin a form they can fill out to add a new product.
+
+<img src="media/readme_media/feature-add-product.png" alt="Add product functions">
+<img src="media/readme_media/feature-add-product2.png" alt="Add product functions">
+
+[Table of contents](#table-of-contents)
+
+### Edit Products
+
+- If the user is a site admin the can edit exsisting products by clicking the edit button that will only show for them below the product images on both the products pages and products details pages. This page gives the admin a pre filled form they can edit to change the products details.
+    - There will also be a delete button next to all edit buttons if the admin would like to delete the product all together.
+
+<img src="media/readme_media/feature-edit-product.png" alt="Add product functions">
+<img src="media/readme_media/feature-edit-product2.png" alt="Add product functions">
+<img src="media/readme_media/feature-edit-product3.png" alt="Add product functions">
+
+[Table of contents](#table-of-contents)
+
+### Bag Feature
+
+- On the shopping bag page you can view the items in your bag.
+    - You can change the quantity of the items in the bag by using the + and - buttons and pressing update.
+    - You can also remove the item from the bag by clicking remove. 
+- You can also view a quick summery of all the items in the bag.
+- At teh bottom of the summery you have two choices, you can either click keep shopping to view more items or checkout which will take you to the ckeckout page.
+- At the bottom of the summery if you have less than £50 worth of items in the bag it will tell you how much more you would need to spend if you want free delivery. This is because there is a banner that states users get free delivery if they spend £50 or more.
+
+<img src="media/readme_media/feature-bag.png" alt="Add product functions">
+
+[Table of contents](#table-of-contents)
+
+### Checkout Feature
+
+- On the checkout page you get a view of the order summery first
+- Then you see your order information, if you are logged into a profile that has details saved these details will pre fill for you, and you will just have to fill in your name and carad details.
+- The stripe payment function allows users to make a purchase, by filling out the details and hitting complete order.
+- There is also a button for the user to adjust the bag if they would like to make any changes before completing the order. 
+
+<img src="media/readme_media/feature-checkout1.png" alt="Checkout functions">
+<img src="media/readme_media/feature-checkout2.png" alt="Checkout function">
+<img src="media/readme_media/feature-checkout3.png" alt="Checkout function">
+
+[Table of contents](#table-of-contents)
 
 ## Testing
 
@@ -235,40 +346,31 @@ HTML was tested using the official [W3C validator](https://validator.w3.org/nu/)
 
 The following errors/warnings were found:
 
-<img src="images/html-home.png" alt="Testing html for home page">
+<img src="#" alt="Testing html for # page">
 
-1. lang missing from <html> tag.
-    - To fix this i just added lang="en" to the <html> tag.
+1. <!-- Add errors -->
+    - To fix this I
 
-Retested: Warning cleared
+Retested: <!-- /Error/Warning cleared -->
 
-2. An image must have an alt attribute.
-    - For both of these errors I added and alt attribute to the images that have details of the image just in case the image doesn't load.
+2. <!-- Add errors -->
+    - To fix this I
 
-Retested: Error cleared
+Retested: <!-- /Error/Warning cleared -->
 
-<img src="images/html-gallery.png" alt="Testing html for gallery page">
 
-1. An image must have an alt attribute.
-    - I had made the same mistake of forgetting to add an alt attribute on the gallery page so followed the same process to fix these errors.
+<img src="#" alt="Testing html for # page">
 
-Retested: Error cleared
+1. <!-- Add errors -->
+    - To fix this I
 
-<img src="images/html-news-det.png" alt="Testing html for news detail pages">
+Retested: <!-- /Error/Warning cleared -->
 
-1. Bad value on image element
-    - To fix this I put it into the CSS style sheet.
+2. <!-- Add errors -->
+    - To fix this I
 
-2. The font element is obsolete 
-    - I didn’t recognise this code so I searched for the code it gave me on the error page in my base.html and news_detail.html files and no results were found, I’m unsure where it has pulled this code from, and I believe the third error is also in relation to this.
+Retested: <!-- /Error/Warning cleared -->
 
-<img src="images/html-gallery-det.png" alt="Testing html for gallery detail pages">
-
-1. Element div not allowed as child of element h2 
-    - I didn't recognise this code so I searched for h2 in my base.html and news_detail.html files and no results were found.
-
-2. No p element in scope but a p end tag seen.
-    - i searched for a stray </p> but none were found in either file.
 
 ### CSS
  
@@ -276,11 +378,11 @@ CSS was tested using the official [(Jigsaw) validator](https://jigsaw.w3.org/css
 
 No errors were found:
 
-<img src="images/css-home.png" alt="Testing css for home page">
-<img src="images/css-gallery.png" alt="Testing CSS for gallery page">
-<img src="images/css-gallery-det.png" alt="Testing CSS for gallery details pages">
-<img src="images/css-news.png" alt="Testing CSS for news page">
-<img src="images/css-news-det.png" alt="Testing CSS for news details pages">
+<img src="#" alt="Testing css for # page">
+<img src="#" alt="Testing css for # page">
+<img src="#" alt="Testing css for # page">
+<img src="#" alt="Testing css for # page">
+
 
 ### Python
  
@@ -288,11 +390,13 @@ Python was tested using the official [PEP8](http://pep8online.com/)
 
 The following errors were found:
 
-<img src="images/py.png" alt="Testing python">
+<img src="#" alt="Testing python">
 
-To fix these all I had to do was extend the code onto the next line, all of these errors were caused by comments.
+To fix these I 
 
 ### Manual Testing 
+
+<!-- Change for stepldn info -->
 
 Component | Function | Does it work? | Fixed? 
 --------- | --------- | ----------------- | ------ |
@@ -308,30 +412,30 @@ Logout: Sign out button | Allows user to sign out  | Yes | N/A
 News: News post slug links | Takes user to relevant news post details page  | Yes | N/A
 Gallery: Post slug link | Takes user to relevant post details page | Yes | N/A
 Gallery posts: like and unlike button | Allows user to like or unlike a post when logged in  | Yes | N/A
-Gallery posts: Submit button | Allows user to leave a comment for the admin to validate and eventually for everyone to view on the page  | Yes | N/A
+Gallery posts: Submit button | Allows user to leave a comment for the admin to validate and eventually for everyone to view on the page  | Yes | N/A 
 
 ## Bugs
 
 I ran into this error message:
 
-<img src="images/error.png" alt="error message">
+<img src="#" alt="error message">
 
-I realised that I was missing news/ from my news/< slug:slug >/ in my urls.py file, when I changed that it worked but my page wasn't rendering correctly.
+I realised that I was missing #
 
 This is how it rendered:	
 
-<img src="images/render.png" alt="image of how page was rendering incorrectly">
+<img src="#" alt="image of how page was rendering incorrectly">
 
-I originally had written return render(request, "news_detail.html")
+I originally had written #
 so I tried this:
 
-<img src="images/fix2.png" alt="image of how I tried to fix">
+<img src="#" alt="image of how I tried to fix">
 
 This didnt work so I also tried:
 
-<img src="images/fix.png" alt="image of how I tried to fix">
+<img src="#" alt="image of how I tried to fix">
 
-Then I noticed a spelling error in the first attempt I had written new_detail.html when I was supposed to write news_detail.html and then it all worked.
+Then I noticed #
 
 ## Deployment
 
@@ -352,22 +456,10 @@ DATABASES = {
 
 ## Credits
 
-Thankyou to tutor support for helping me figure out my bug.
+The run through project was helpful for getting me through the project.
 
-The run through project was helpful for getting me through this project I went back to see how classes were used throughout the making.
-
-Gallery images from: https://www.istockphoto.com/
-
-News content: https://visitlondon.com/things-to-do/whats-on/art-and-exhibitions/top-10-exhibitions
+Product images from: https://www.shutterstock.com/
 
 Am I responsive: http://ami.responsivedesign.is/
 
-
-
-
-https://www.shutterstock.com/
-word tracker - https://www.wordtracker.com/?fpr=refer&fp_sid=bingof
-    
-HTML was tested using the official [W3C validator](https://validator.w3.org/nu/) 
-CSS was tested using the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-Python was tested using the official [PEP8](http://pep8online.com/)
+To help with the SEO I used word tracker - https://www.wordtracker.com/?fpr=refer&fp_sid=bingof

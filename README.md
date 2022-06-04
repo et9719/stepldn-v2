@@ -344,32 +344,135 @@ This helped me break the project down into smaller tasks that would be more mana
 
 HTML was tested using the official [W3C validator](https://validator.w3.org/nu/) 
 
+## Home
+
 The following errors/warnings were found:
 
-<img src="#" alt="Testing html for # page">
+<img src="media/readme_media/html-home.png" alt="Testing HTML for home page">
 
 1. <!-- Add errors -->
     - To fix this I
 
 Retested: <!-- /Error/Warning cleared -->
 
-2. <!-- Add errors -->
-    - To fix this I
+## Bag
 
-Retested: <!-- /Error/Warning cleared -->
+No errors were found.
 
+<img src="media/readme_media/html-bag.png" alt="Testing HTML for the bag page">
 
-<img src="#" alt="Testing html for # page">
+## Checkout
+
+No errors were found.
+
+<img src="media/readme_media/html-checkout.png" alt="Testing HTML for the checkout page">
+
+## Checkout Success
+
+No errors were found.
+
+<img src="media/readme_media/html-checkout-success.png" alt="Testing HTML for the checkout success page">
+
+## Contact
+
+The following errors/warnings were found:
+
+<img src="media/readme_media/html-contact.png" alt="Testing HTML for the contact page">
 
 1. <!-- Add errors -->
     - To fix this I
 
 Retested: <!-- /Error/Warning cleared -->
 
-2. <!-- Add errors -->
+## Contact Success
+
+<!-- ######## NOT WORKING ####### -->
+
+The following errors/warnings were found:
+
+<img src="media/readme_media/html-contact-success.png" alt="Testing HTML for the contact success page">
+
+1. <!-- Add errors -->
     - To fix this I
 
 Retested: <!-- /Error/Warning cleared -->
+
+## View Contact
+
+<!-- ######## NOT MADE ####### -->
+
+The following errors/warnings were found:
+
+<img src="media/readme_media/html-view-contact.png" alt="Testing HTML for the view contact page">
+
+1. <!-- Add errors -->
+    - To fix this I
+
+Retested: <!-- /Error/Warning cleared -->
+
+## Unsubscribe
+
+The following errors/warnings were found:
+
+<img src="media/readme_media/html-unsubscribe.png" alt="Testing HTML for the unsubscribe page">
+
+1. <!-- Add errors -->
+    - To fix this I
+
+Retested: <!-- /Error/Warning cleared -->
+
+## Add Product
+
+No errors were found.
+
+<img src="media/readme_media/html-add-product.png" alt="Testing HTML for the add product page">
+
+## Edit Product
+
+No errors were found.
+
+<img src="media/readme_media/html-edit-product.png" alt="Testing HTML for the edit product page">
+
+## Product Detail
+
+No errors were found.
+
+<img src="media/readme_media/html-product-detail.png" alt="Testing HTML for the product detail page">
+
+## Products
+
+No errors were found.
+
+<img src="media/readme_media/html-products.png" alt="Testing HTML for the products page">
+
+## Profile
+
+No errors were found.
+
+<img src="media/readme_media/html-profile.png" alt="Testing HTML for the profile page">
+
+## Login
+
+No errors were found.
+
+<img src="media/readme_media/html-login.png" alt="Testing HTML for the login page">
+
+## Logout
+
+The following errors/warnings were found:
+
+<img src="media/readme_media/html-logout.png" alt="Testing HTML for the logout page">
+
+1. <!-- Add errors -->
+    - To fix this I
+
+Retested: <!-- /Error/Warning cleared -->
+
+## Sign Up
+
+No errors were found.
+
+<img src="media/readme_media/html-signup.png" alt="Testing HTML for the signup page">
 
 
 ### CSS
@@ -378,10 +481,23 @@ CSS was tested using the official [(Jigsaw) validator](https://jigsaw.w3.org/css
 
 No errors were found:
 
-<img src="#" alt="Testing css for # page">
-<img src="#" alt="Testing css for # page">
-<img src="#" alt="Testing css for # page">
-<img src="#" alt="Testing css for # page">
+## base.css
+
+<img src="media/readme_media/css-base.png" alt="Testing css for base.css">
+
+<!-- Warnings ? -->
+
+## checkout.css
+
+<img src="media/readme_media/css-checkout.png" alt="Testing css for checkout.css">
+
+<!-- Warnings ? -->
+
+## profile.css
+
+<img src="media/readme_media/css-profile.png" alt="Testing css for profile.css">
+
+
 
 
 ### Python

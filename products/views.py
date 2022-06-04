@@ -19,6 +19,7 @@ def all_products(request):
     direction = None
 
     if request.GET:
+        # get products using sort key
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -34,14 +35,17 @@ def all_products(request):
             products = products.order_by(sortkey)
 
     if request.GET:
+        # get products just in certain category.
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
     if request.GET:
+        # get products using search bar
         if 'q' in request.GET:
             query = request.GET['q']
+            # if nothing matches what was searched show error message.
             if not query:
                 messages.error(
                     request,
@@ -66,34 +70,39 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
+    # get product
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
     }
-
+    # return products context
     return render(request, 'products/product_detail.html', context)
 
 
 @login_required
 def add_product(request):
     """ Add a product to the store """
+    # if user is not admin show error message
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
+        # if form is filled out correctly save
+        # product and show success message.
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            # if form is invalid show error message.
+            messages.error(request, 'Failed to add product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -105,19 +114,23 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
+    # if user is not admin show error message.
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-
+    # get product
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
+        # if form is edited correctly save form and show success message.
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            # if form is invalid show error message.
+            messages.error(request, 'Failed to update product.\
+                 Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -134,11 +147,14 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
+    # if user is not admin show error message.
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-
+    # get product
     product = get_object_or_404(Product, pk=product_id)
+    # delete product
     product.delete()
+    # show success message.
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))

@@ -1,5 +1,5 @@
 ''' Imports '''
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.contrib import messages
 from .forms import NewsForm
 from .models import Subscribe
@@ -36,11 +36,13 @@ def unsubscribe(request):
             instance = form.save(commit=False)
             if Subscribe.objects.filter(email=instance.email).exists():
                 # delete Subscriber
-                messages.success(request, "we're sorry to lose you as a subscriber, feel free to subscribe again anytime.")
+                messages.success(request, "we're sorry to lose you as a subscriber, \
+                    feel free to subscribe again anytime.")
                 form = NewsForm()
                 return render(request, 'home/unsubscribe.html', {'form': form})
             else:
-                messages.error(request, "There are no subscribers currently using this email.")
+                messages.error(request, "There are no subscribers currently \
+                    using this email.")
                 form = NewsForm()
                 return render(request, 'home/unsubscribe.html', {'form': form})
     form = NewsForm()

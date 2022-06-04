@@ -340,11 +340,11 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ## Testing
 
-### HTML
+## HTML
 
 HTML was tested using the official [W3C validator](https://validator.w3.org/nu/) 
 
-## Home
+### Home
 
 The following errors/warnings were found:
 
@@ -355,25 +355,25 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## Bag
+### Bag
 
 No errors were found.
 
 <img src="media/readme_media/html-bag.png" alt="Testing HTML for the bag page">
 
-## Checkout
+### Checkout
 
 No errors were found.
 
 <img src="media/readme_media/html-checkout.png" alt="Testing HTML for the checkout page">
 
-## Checkout Success
+### Checkout Success
 
 No errors were found.
 
 <img src="media/readme_media/html-checkout-success.png" alt="Testing HTML for the checkout success page">
 
-## Contact
+### Contact
 
 The following errors/warnings were found:
 
@@ -384,7 +384,7 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## Contact Success
+### Contact Success
 
 <!-- ######## NOT WORKING ####### -->
 
@@ -397,7 +397,7 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## View Contact
+### View Contact
 
 <!-- ######## NOT MADE ####### -->
 
@@ -410,7 +410,7 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## Unsubscribe
+### Unsubscribe
 
 The following errors/warnings were found:
 
@@ -421,43 +421,43 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## Add Product
+### Add Product
 
 No errors were found.
 
 <img src="media/readme_media/html-add-product.png" alt="Testing HTML for the add product page">
 
-## Edit Product
+### Edit Product
 
 No errors were found.
 
 <img src="media/readme_media/html-edit-product.png" alt="Testing HTML for the edit product page">
 
-## Product Detail
+### Product Detail
 
 No errors were found.
 
 <img src="media/readme_media/html-product-detail.png" alt="Testing HTML for the product detail page">
 
-## Products
+### Products
 
 No errors were found.
 
 <img src="media/readme_media/html-products.png" alt="Testing HTML for the products page">
 
-## Profile
+### Profile
 
 No errors were found.
 
 <img src="media/readme_media/html-profile.png" alt="Testing HTML for the profile page">
 
-## Login
+### Login
 
 No errors were found.
 
 <img src="media/readme_media/html-login.png" alt="Testing HTML for the login page">
 
-## Logout
+### Logout
 
 The following errors/warnings were found:
 
@@ -468,49 +468,99 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-## Sign Up
+### Sign Up
 
 No errors were found.
 
 <img src="media/readme_media/html-signup.png" alt="Testing HTML for the signup page">
 
 
-### CSS
+## CSS
  
 CSS was tested using the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
 No errors were found:
 
-## base.css
+### base.css
 
 <img src="media/readme_media/css-base.png" alt="Testing css for base.css">
 
 <!-- Warnings ? -->
 
-## checkout.css
+### checkout.css
 
 <img src="media/readme_media/css-checkout.png" alt="Testing css for checkout.css">
 
 <!-- Warnings ? -->
 
-## profile.css
+### profile.css
 
 <img src="media/readme_media/css-profile.png" alt="Testing css for profile.css">
 
 
-
-
-### Python
+## Python
  
 Python was tested using the official [PEP8](http://pep8online.com/)
 
-The following errors were found:
+### Checkout
 
-<img src="#" alt="Testing python">
+The following errors/warnings were found:
 
-To fix these I 
+#### models
+<img src="media/readme_media/checkout-models.png" alt="Testing python for the checkout app">
 
-### Manual Testing 
+#### views
+<img src="media/readme_media/checkout-views.png" alt="Testing python for the checkout app">
+
+#### webhook_handler
+<img src="media/readme_media/checkout-webhook-h.png" alt="Testing python for the checkout app">
+
+#### webhook
+<img src="media/readme_media/checkout-webhooks.png" alt="Testing python for the checkout app">
+
+1. All of these errors came form lines being too long 
+    - To fix this I <!-- fix them -->
+
+Retested: <!-- /Error/Warning cleared -->
+
+### Products
+
+The following errors/warnings were found:
+
+#### views
+<img src="media/readme_media/products-view.png" alt="Testing python for the products app">
+
+#### widgets
+<img src="media/readme_media/products-widgets.png" alt="Testing python for the products app">
+
+1. All of these errors came form lines being too long 
+    - To fix this I <!-- fix them -->
+
+Retested: <!-- /Error/Warning cleared -->
+
+### Profiles
+
+The following errors/warnings were found:
+
+#### views
+<img src="media/readme_media/profiles-forms.png" alt="Testing python for the profiles app">
+
+1. This error came form lines being too long.
+    - To fix this I <!-- fix them -->
+
+Retested: <!-- /Error/Warning cleared -->
+
+### Stepldn
+
+#### settings
+<img src="media/readme_media/settings.png" alt="Testing python for the stepldn app">
+
+1. These errors came form lines being too long.
+    - To fix this I <!-- fix them -->
+
+Retested: <!-- /Error/Warning cleared -->
+
+## Manual Testing 
 
 <!-- Change for stepldn info -->
 

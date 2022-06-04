@@ -3,7 +3,6 @@ from django.forms import ModelForm
 from .models import Subscribe
 
 
-
 class NewsForm(ModelForm):
     ''' create a form for users to sign up to the news letter '''
     class Meta:

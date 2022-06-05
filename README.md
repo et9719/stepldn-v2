@@ -29,14 +29,15 @@ StepLDN is an e-commerce store created for customers looking to get a new pair o
     - [Bag Feature](#bag-feature)
     - [Checkout Feature](#checkout-feature)
 5. [SEO](#seo)
-6. [Testing](#testing)
+6. [Marketing](#marketing)
+7. [Testing](#testing)
     - [HTML](#html)
     - [CSS](#css)
     - [Python](#python)
     - [Manual Testing](#manual-testing)
-7. [Bugs](#bugs)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
   
 ## Wireframes
 
@@ -341,7 +342,9 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ## SEO
 
-### 
+To improve the search engine optimisation of the site I have added some keywords in a meta tag  to my base.html. I used WordTracker to research these short-tail and long-tail keywords to find out which words had the least competition.
+
+This is a list of all the keywords I came up with shoes, laces, footwear, sandles, nike shoes, new shoes, jorden shoes, running shoes, womens shoes, mens shoes, childrens shoes, converse shoes, shoe store, shoe shop, blue suade, shoe cleaner, shoes london, buy high quality shoes, buy comfortable shoes, shoes for children, shoes for men, shoes for women, shoe shop online.
 
 <img src="media/readme_media/seo8.png" alt="Research for seo">
 <img src="media/readme_media/seo7.png" alt="Research for seo">
@@ -352,6 +355,30 @@ This helped me break the project down into smaller tasks that would be more mana
 <img src="media/readme_media/seo2.png" alt="Research for seo">
 <img src="media/readme_media/seo1.png" alt="Research for seo">
 
+I ended up using these:
+
+- Comfortable
+- Trainers your kids could walk in all day
+- Ladies trainers
+- Casual shoes for men
+- Shoes for kids
+- No lace trainers
+- Great shoes for running
+- Shoe shop online
+- Kids shoes
+- Comfy shoes
+- Laces
+- Footwear
+- Ladies trainers
+- Comfortable
+- Shoe cleaner
+- Shoes for men
+- Shoes london
+- Buy shoes
+- Shoe website 
+- Elastic laces
+
+
 <img src="media/readme_media/seo15.png" alt="Implimented seo">
 <img src="media/readme_media/seo16.png" alt="Implimented seo">
 <img src="media/readme_media/seo17.png" alt="Implimented seo">
@@ -359,12 +386,18 @@ This helped me break the project down into smaller tasks that would be more mana
 <img src="media/readme_media/seo19.png" alt="Implimented seo">
 <img src="media/readme_media/seo20.png" alt="Implimented seo">
 
-### Facebook page
+### Marketing
+
+I decided to use email marketing and social media marketing for my site, these are two very effective and also free marketing strategies for an E-commerce store.
+
+Email marketing - Using email marketing is a great way to gain returning customers and increase sales, in the emails I can give the users discount codes and point out special offers to bring back paying customers to the site.
+
+Social media - Using social media plateforms is a great way for a company to build a brand, it is a great way to interact with customers and this will help build relationships and loyalty, followers tend to share posts which will help gain more attraction to the site.
 
 <img src="media/readme_media/fb-page.png" alt="Image of the facebook page">
 <img src="media/readme_media/fb-info.png" alt="Infomation on the facebook page">
 <img src="media/readme_media/fb-post.png" alt="Facebook page post">
-
+ 
 [Table of contents](#table-of-contents)
 
 ## Testing

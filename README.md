@@ -28,14 +28,15 @@
     - [Edit Products](#edit-products)
     - [Bag Feature](#bag-feature)
     - [Checkout Feature](#checkout-feature)
-5. [Testing](#testing)
+5. [SEO](#seo)
+6. [Testing](#testing)
     - [HTML](#html)
     - [CSS](#css)
     - [Python](#python)
     - [Manual Testing](#manual-testing)
-6. [Bugs](#bugs)
-7. [Deployment](#deployment)
-8. [Credits](#credits)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
   
 ## Wireframes
 
@@ -335,6 +336,34 @@ This helped me break the project down into smaller tasks that would be more mana
 <img src="media/readme_media/feature-checkout1.png" alt="Checkout functions">
 <img src="media/readme_media/feature-checkout2.png" alt="Checkout function">
 <img src="media/readme_media/feature-checkout3.png" alt="Checkout function">
+
+[Table of contents](#table-of-contents)
+
+## SEO
+
+### 
+
+<img src="media/readme_media/seo8.png" alt="Research for seo">
+<img src="media/readme_media/seo7.png" alt="Research for seo">
+<img src="media/readme_media/seo6.png" alt="Research for seo">
+<img src="media/readme_media/seo5.png" alt="Research for seo">
+<img src="media/readme_media/seo4.png" alt="Research for seo">
+<img src="media/readme_media/seo3.png" alt="Research for seo">
+<img src="media/readme_media/seo2.png" alt="Research for seo">
+<img src="media/readme_media/seo1.png" alt="Research for seo">
+
+<img src="media/readme_media/seo15.png" alt="Implimented seo">
+<img src="media/readme_media/seo16.png" alt="Implimented seo">
+<img src="media/readme_media/seo17.png" alt="Implimented seo">
+<img src="media/readme_media/seo18.png" alt="Implimented seo">
+<img src="media/readme_media/seo19.png" alt="Implimented seo">
+<img src="media/readme_media/seo20.png" alt="Implimented seo">
+
+### Facebook page
+
+<img src="media/readme_media/fb-page.png" alt="Image of the facebook page">
+<img src="media/readme_media/fb-info.png" alt="Infomation on the facebook page">
+<img src="media/readme_media/fb-post.png" alt="Facebook page post">
 
 [Table of contents](#table-of-contents)
 

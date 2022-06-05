@@ -452,6 +452,8 @@ Retested: <!-- /Error/Warning cleared -->
 
 The following errors/warnings were found:
 
+
+<!-- html-contact-success.png doesnt exsit yet -->
 <img src="media/readme_media/html-contact-success.png" alt="Testing HTML for the contact success page">
 
 1. <!-- Add errors -->

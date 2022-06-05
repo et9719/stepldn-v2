@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -72,9 +72,27 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
     # get product
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.filter(active=True)
+    new_review = None
+    # Reviews posted
+    if request.method == 'POST':
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+
+            # Create Review object but don't save to database yet
+            new_review = review_form.save(commit=False)
+            # Assign the current post to the comment
+            new_review.product = product
+            # Save the comment to the database
+            new_review.save()
+    else:
+        review_form = ReviewForm()
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'new_review': new_review,
+        'review_form': review_form
     }
     # return products context
     return render(request, 'products/product_detail.html', context)

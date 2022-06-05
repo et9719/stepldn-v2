@@ -139,15 +139,6 @@ html {
     padding-top: 5%;
 }
 
-/* Mail Chimp */
-/* 
-#mc_embed_signup {
-    background:#fff;
-    clear:left;
-    font:14px Helvetica,Arial,sans-serif; 
-    width:600px;
-} */
-
 /* Home Page */
 .home-img {
     border: 2px solid black;
@@ -192,6 +183,11 @@ html {
 .edit-btns {
     position: relative;
     left: 10%;
+}
+
+.reviews {
+    padding: 5%;
+    margin: 5% 0;
 }
 
 /* Sign Out */

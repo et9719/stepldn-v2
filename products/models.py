@@ -40,3 +40,23 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    ''' Information needed to create review '''
+    product = models.ForeignKey(
+        'Product',
+        on_delete=models.CASCADE,
+        related_name='reviews'
+        )
+    name = models.CharField(max_length=80)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=False)
+
+    class Meta:
+        ''' ordering reviews by the dates they are created on. '''
+        ordering = ['created_on']
+
+    def __str__(self):
+        return 'Review {} by {}'.format(self.body, self.name)

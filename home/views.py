@@ -38,7 +38,7 @@ def unsubscribe(request):
                 # delete Subscriber
                 messages.success(request, "we're sorry to lose you as a subscriber, \
                     feel free to subscribe again anytime.")
-                form = NewsForm()
+                Subscribe.objects.filter(email=instance.email).delete()
                 return render(request, 'home/unsubscribe.html', {'form': form})
             else:
                 messages.error(request, "There are no subscribers currently \

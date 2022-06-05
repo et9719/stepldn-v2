@@ -2,11 +2,11 @@
 
 ## Introduction
 
-<!--Write intro -->
+StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project i will set up an authentication mechanism that allows you users to purchase the products. If the user id logged in as a site damin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
 
-<img src="#" alt="Live website image"> 
+<img src="#" alt="Live website image">
 
-[Click here to go to the live website!](<!-- Insert AmIResponsive image -->) 
+[Click here to go to the live website!](https://steplondon.herokuapp.com/<!-- Change before submittion -->) 
 
 ## Table of contents
 
@@ -426,18 +426,6 @@ The following errors/warnings were found:
 
 Retested: <!-- /Error/Warning cleared -->
 
-### View Contact
-
-<!-- ######## NOT MADE ####### -->
-
-The following errors/warnings were found:
-
-<img src="media/readme_media/html-view-contact.png" alt="Testing HTML for the view contact page">
-
-1. <!-- Add errors -->
-    - To fix this I
-
-Retested: <!-- /Error/Warning cleared -->
 
 ### Unsubscribe
 
@@ -608,7 +596,7 @@ Navbar: Womens/ Flipflops | Takes user to womens Flipflops  | Yes | N/A
 Navbar: Childrens/ All products | Takes user to all childrens shoes | Yes | N/A
 Navbar: Childrens/ Trainers | Takes user to childrens trainers  | Yes | N/A
 Navbar: Childrens/ Flipflops | Takes user to childrens Flipflops  | Yes | N/A
-Home: Subscribe form | Allows user to sign up to newsletter  | No | <!-- Fix -->
+Home: Subscribe form | Allows user to sign up to newsletter  | No | Yes
 Home: I want to unsubscribe | Takes user to unsubscribe page | Yes | N/A
 Footer: Social buttons | Takes user to those social media sites  | Yes | N/A
 Footer: T & C | Takes user to terms and conditions  | <!-- # --> | <!-- # -->
@@ -624,7 +612,6 @@ Product details: Keep shopping | Takes user all products page | Yes | N/A
 Product management: Cancel | Takes Admin to all produtcts page | Yes | N/A
 Product management: Select img | Allows admin to select product image | Yes | N/A
 Product management: Add product | Adds product | Yes | N/A
-Product management: Check messgaes | Takes admin to message page | <!-- # --> | <!-- # -->
 Product management: Edit product | Updates product information | Yes | N/A
 My profile: Update info | Updates users information | Yes | N/A
 My profile: Order number | Takes user to that order confirmation | Yes | N/A
@@ -641,9 +628,9 @@ Checkout: Delivery info form | Allows user to make a purchase | Yes | N/A
 Checkout: Adjust bag | Takes user to bag page | Yes | N/A
 Checkout: Complete order | Puts order through, takes user to confirmation | Yes | N/A
 Checkout success: Shop again | Takes user to all products page | Yes | N/A
-Contact: Submit | Submits form to admin | No | <!-- Fix -->
+Contact: Submit | Submits form to admin | No | Yes
 Unsubscribe: I want to stay subscribed | Takes user to home page | Yes | N/A
-Unsubscribe: Unsubscribe | Removes users email | No | <!-- Fix -->
+Unsubscribe: Unsubscribe | Removes users email | No | Yes
 
 
 ## Bugs

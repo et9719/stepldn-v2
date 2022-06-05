@@ -1,8 +1,6 @@
 ''' Imports '''
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
 from .forms import ContactForm
-from .models import Contact
 
 
 def contact_view(request):
@@ -15,14 +13,3 @@ def contact_view(request):
     form = ContactForm()
     context = {'form': form}
     return render(request, 'contact/contact.html', context)
-
-
-@login_required
-def read_contact_view(request):
-    """ Allow site admin to read messages left through contact form """
-    # What model we are using for this view
-    model = Contact
-    # get messages
-    
-    # What page admin will be able to see this on
-    

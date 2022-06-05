@@ -102,12 +102,12 @@
                 </div>
             </form>
         </div>
-        <div class="row reviews">
-            <div class="col-12 bg-color">
-                <h3 class="logo-f">Reviews</h2>
+        <div class="row reviews w-100">
+            <div class="col-12 col-md-6 bg-color">
+                <h3 class="logo-f leave-review">Reviews</h2>
                 <hr>
                 {% for review in reviews %}
-                    <div class="">
+                    <div>
                         <p class="font-weight-bold">
                             {{ review.name }}
                             <span class=" text-muted font-weight-normal">
@@ -119,13 +119,13 @@
                     </div>
                 {% endfor %}
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-6">
                 {% if new_review %}
                     <div class="alert alert-success" role="alert">
                     Your review is awaiting moderation
                     </div>
                 {% else %}
-                    <h3 class="logo-f">Leave a review</h3>
+                    <h3 class="leave-review logo-f">Leave a review</h3>
                     <form method="post">
                         {{ review_form|crispy }}
                         {% csrf_token %}

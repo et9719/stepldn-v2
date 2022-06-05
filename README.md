@@ -591,7 +591,6 @@ Retested: <!-- /Error/Warning cleared -->
 
 ## Manual Testing 
 
-<!-- Change for stepldn info -->
 
 Component | Function | Does it work? | Fixed? 
 --------- | --------- | ----------------- | ------ |

@@ -566,19 +566,57 @@ Retested: <!-- /Error/Warning cleared -->
 
 Component | Function | Does it work? | Fixed? 
 --------- | --------- | ----------------- | ------ |
-Navbar: Home | Takes user to home page | Yes | N/A
-Navbar: News| Takes user to news page | Yes | N/A
-Navbar: Gallery | Takes user to gallery  | Yes | N/A
-Navbar: Register | Takes user to the sign up page  | Yes | N/A
-Navbar: Login | Takes user to the login page  | Yes | N/A
-Navbar: logout | Takes user to the log out page  | Yes | N/A
-Register: Sign up button | Allows user to sign up  | Yes | N/A
-Login: Sign in button | Allows user to sign in  | Yes | N/A
-Logout: Sign out button | Allows user to sign out  | Yes | N/A
-News: News post slug links | Takes user to relevant news post details page  | Yes | N/A
-Gallery: Post slug link | Takes user to relevant post details page | Yes | N/A
-Gallery posts: like and unlike button | Allows user to like or unlike a post when logged in  | Yes | N/A
-Gallery posts: Submit button | Allows user to leave a comment for the admin to validate and eventually for everyone to view on the page  | Yes | N/A 
+Navbar: Logo | Takes user to home page | Yes | N/A
+Navbar: Search bar | Search for products | Yes | N/A
+Navbar: My account/ Register | Takes user to create account page | Yes | N/A
+Navbar: My account/ Login | Takes user to the sign in page  | Yes | N/A
+Navbar: My account/ Logout | Takes user to the log out page  | Yes | N/A
+Navbar: Mens/ All products | Takes user to all mens shoes | Yes | N/A
+Navbar: Mens/ Trainers | Takes user to mens trainers  | Yes | N/A
+Navbar: Mens/ Flipflops | Takes user to mens Flipflops  | Yes | N/A
+Navbar: Womens/ All products | Takes user to all womens shoes | Yes | N/A
+Navbar: Womens/ Trainers | Takes user to womens trainers  | Yes | N/A
+Navbar: Womens/ Flipflops | Takes user to womens Flipflops  | Yes | N/A
+Navbar: Childrens/ All products | Takes user to all childrens shoes | Yes | N/A
+Navbar: Childrens/ Trainers | Takes user to childrens trainers  | Yes | N/A
+Navbar: Childrens/ Flipflops | Takes user to childrens Flipflops  | Yes | N/A
+Home: Subscribe form | Allows user to sign up to newsletter  | No | <!-- Fix -->
+Home: I want to unsubscribe | Takes user to unsubscribe page | Yes | N/A
+Footer: Social buttons | Takes user to those social media sites  | Yes | N/A
+Footer: T & C | Takes user to terms and conditions  | <!-- # --> | <!-- # -->
+Footer: Privacy policy | Takes user to privacy policy | <!--# --> | <!--# -->
+Footer: Site map | Takes user to site map | <!--# --> | <!--# --> 
+Footer: Via the site | Takes user Contact us page | Yes | N/A
+Products: Product | Takes user to Product detail page | Yes | N/A
+Products/Product details: Edit | Takes admin to Edit product page | Yes | N/A
+Products/Product details: Delete | Allows admin to delete product | Yes | N/A
+Product details/Bag: Quantity buttons | add or takes away number of items with + or - buttons | Yes | N/A
+Product details: Add to bag | Adds item to users bag | Yes | N/A
+Product details: Keep shopping | Takes user all products page | Yes | N/A
+Product management: Cancel | Takes Admin to all produtcts page | Yes | N/A
+Product management: Select img | Allows admin to select product image | Yes | N/A
+Product management: Add product | Adds product | Yes | N/A
+Product management: Check messgaes | Takes admin to message page | <!-- # --> | <!-- # -->
+Product management: Edit product | Updates product information | Yes | N/A
+My profile: Update info | Updates users information | Yes | N/A
+My profile: Order number | Takes user to that order confirmation | Yes | N/A
+Log out: No  | Takes user to all products page | Yes | N/A
+Log out: Yes | Logs user out | Yes | N/A
+Sign up: Sign up | Create user account | Yes | N/A
+Sign in: Sign in | Signs user in | Yes | N/A
+Sign in: Register now | Takes user to sign up page | No | <!-- Fix -->
+Bag: Keep shopping | Takes user to all products page | Yes | N/A
+Bag: Update | Updates quantity of item | Yes | N/A
+Bag: Remove | Deletes item | Yes | N/A
+Bag: Secure checkout | Takes user to checkout page | Yes | N/A
+Checkout: Delivery info form | Allows user to make a purchase | Yes | N/A
+Checkout: Adjust bag | Takes user to bag page | Yes | N/A
+Checkout: Complete order | Puts order through, takes user to confirmation | Yes | N/A
+Checkout success: Shop again | Takes user to all products page | Yes | N/A
+Contact: Submit | Submits form to admin | No | <!-- Fix -->
+Unsubscribe: I want to stay subscribed | Takes user to home page | Yes | N/A
+Unsubscribe: Unsubscribe | Removes users email | No | <!-- Fix -->
+
 
 ## Bugs
 

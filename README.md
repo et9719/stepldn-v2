@@ -4,7 +4,7 @@
 
 StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project i will set up an authentication mechanism that allows you users to purchase the products. If the user id logged in as a site damin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
 
-<img src="#" alt="Live website image">
+<img src="media/readme_media/amiresponsive.png" alt="Live website image">
 
 [Click here to go to the live website!](https://steplondon.herokuapp.com/<!-- Change before submittion -->) 
 

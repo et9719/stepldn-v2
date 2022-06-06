@@ -3,13 +3,12 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'checkout/css/checkouta.css' %}">
 {% endblock %}
 
 {% block content %}
-    <div class="col white-container"></div>
     <div class="container">
-        <div class="row">
+        <div class="row bag">
             <div class="col">
                 <hr>
                 <h2 class="logo-f text-center mb-4">Your Shopping Bag</h2>
@@ -65,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-color">
+        <div class="row bg-color bottom-m">
             <div class="col-10 col-md-8 offset-1 offset-md-2 box-container box-up">
                 <div class="row">    
                     <form action="{% url 'checkout' %}" method="POST" id="payment-form">

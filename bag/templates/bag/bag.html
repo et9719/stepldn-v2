@@ -6,14 +6,13 @@
 {% block content %}
     <div class="container">
         <div class="row bag">
-            <div class="col ">
+            <div class="col">
                 <hr>
                 <h2 class="logo-f text-center mb-4">Your Shopping Bag</h2>
                 <hr>
-                <br>
             </div>
         </div>
-        <div class="row bg-color">
+        <div class="row bg-color bottom-m">
             {% if bag_items %}
                 <div class="col-12 col-md-6">
                     <br>
@@ -87,7 +86,7 @@
                     <br>
                     <p class="text-muted">Order Summary ({{ product_count }})</p>
                     <div class="row">
-                    <div class="col-7 offset-2">
+                    <div class="col-7 offset-1">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
                     </div>
                     <div class="col-3 text-right">
@@ -128,7 +127,7 @@
                         <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                     {% if free_delivery_delta > 0 %}
-                        <p class="mb-1 text-danger">
+                        <p class="mb-1 text-danger free-deliv">
                             You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
                         </p>
                     {% endif %}
@@ -154,14 +153,14 @@
                 </div>
                 <br>            
             {% else %}
-                <div class="row">
+                <div class="row bag-row">
                     <div class="col-12">
                         <p class="lead mb-5">Your bag is empty.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row bag-row">
                     <div class="col-12">
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                        <a href="{% url 'products' %}" class="left btn btn-outline-black rounded-0 btn-lg">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>

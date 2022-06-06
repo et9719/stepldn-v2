@@ -22,8 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ.get('SECRET_KEY', '')
-SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -123,28 +123,28 @@ WSGI_APPLICATION = 'stepldn.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# if 'DATABASE_URL' in os.environ:
-#     DATABASES = {
-#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#     }
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#     }
-
-DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql_psycopg2",
-            "NAME": "daut3ujb01hhlb",
-            "USER": "ccajqjvpcwbpfc",
-            "PASSWORD": "284b6aed1a5a8112cba81145f2b9a86a95a8269e5f61dc9b4dcae25b4a71db63",
-            "HOST": "ec2-34-231-177-125.compute-1.amazonaws.com",
-            "PORT": 5432,
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
+# DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.postgresql_psycopg2",
+#             "NAME": "daut3ujb01hhlb",
+#             "USER": "ccajqjvpcwbpfc",
+#             "PASSWORD": "284b6aed1a5a8112cba81145f2b9a86a95a8269e5f61dc9b4dcae25b4a71db63",
+#             "HOST": "ec2-34-231-177-125.compute-1.amazonaws.com",
+#             "PORT": 5432,
+#         }
+#     }
 
 
 # Password validation

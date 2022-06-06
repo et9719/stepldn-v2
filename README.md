@@ -18,6 +18,7 @@ StepLDN is an e-commerce store created for customers looking to get a new pair o
     - [Footer](#footer)
     - [Contact](#contact)
     - [Newsletter](#newsletter)
+    - [Reviews](#reviews)
     - [Create Account Feature](#create-account-feature)
     - [Sign In Feature](#sign-in-feature)
     - [Sign Out Feature](#sign-out-feature)
@@ -238,6 +239,14 @@ This helped me break the project down into smaller tasks that would be more mana
 -  On the home page there is a form that users can leave their email to sign up for a newsletter.
 
 <img src="media/readme_media/feature-newsletter.png" alt="Newsletter function">
+
+[Table of contents](#table-of-contents)
+
+### Reviews
+
+- On each product detail page, at the bottom there is a section where users can leave a review of the product by filling out the form on the right side of the page and pressing submit. This will save to the admin panel and show a message so teh user knows that their review was submitted. The admin will have to approve of this message. once they have approved the message can be seen on the left hand hide of the page.
+
+<img src="media/readme_media/feature-review.png" alt="Review function">
 
 [Table of contents](#table-of-contents)
 

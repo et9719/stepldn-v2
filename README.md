@@ -571,9 +571,9 @@ The following errors/warnings were found:
 <img src="media/readme_media/checkout-webhooks.png" alt="Testing python for the checkout app">
 
 1. All of these errors came form lines being too long 
-    - To fix this I <!-- fix them -->
+    - To fix this I edited the line so that it was writen over a couple of lines instead.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: All errors cleared.
 
 ### Products
 
@@ -586,9 +586,9 @@ The following errors/warnings were found:
 <img src="media/readme_media/products-widgets.png" alt="Testing python for the products app">
 
 1. All of these errors came form lines being too long 
-    - To fix this I <!-- fix them -->
+    - To fix this I edited the line so that it was writen over a couple of lines instead.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: All errors cleared
 
 ### Profiles
 
@@ -598,9 +598,9 @@ The following errors/warnings were found:
 <img src="media/readme_media/profiles-forms.png" alt="Testing python for the profiles app">
 
 1. This error came form lines being too long.
-    - To fix this I <!-- fix them -->
+    - To fix this I edited the line so it was over a couple of lines.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: All errors cleared
 
 ### Stepldn
 
@@ -634,8 +634,8 @@ Navbar: Childrens/ Flipflops | Takes user to childrens Flipflops  | Yes | N/A
 Home: Subscribe form | Allows user to sign up to newsletter  | No | Yes
 Home: I want to unsubscribe | Takes user to unsubscribe page | Yes | N/A
 Footer: Social buttons | Takes user to those social media sites  | Yes | N/A
-Footer: T & C | Takes user to terms and conditions  | <!-- # --> | <!-- # -->
-Footer: Privacy policy | Takes user to privacy policy | <!--# --> | <!--# -->
+Footer: T & C | Takes user to terms and conditions  | Yes | N/A
+Footer: Privacy policy | Takes user to privacy policy | Yes | N/A
 Footer: Site map | Takes user to site map | <!--# --> | <!--# --> 
 Footer: Via the site | Takes user Contact us page | Yes | N/A
 Products: Product | Takes user to Product detail page | Yes | N/A

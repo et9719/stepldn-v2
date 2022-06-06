@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('pages.urls'))
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('products/', include('products.urls')),
@@ -27,5 +28,8 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
-
+    # path('sitemap.xml/', '../sitemap.xml'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# handling the 404 error
+handler404 = 'pages.views.error_404_view'

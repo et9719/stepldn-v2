@@ -1,8 +1,9 @@
 ''' Imports '''
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import NewsForm
 from .models import Subscribe
+from django.conf import settings
 
 
 def index(request):
@@ -47,3 +48,10 @@ def unsubscribe(request):
                 return render(request, 'home/unsubscribe.html', {'form': form})
     form = NewsForm()
     return render(request, 'home/unsubscribe.html', {'form': form})
+
+
+def error_404_view(request, exception):
+
+    # we add the path to the the 404.html file
+    # here. The name of our HTML file is 404.html
+    return render(request, '404.html')

@@ -25,7 +25,6 @@
     font-size: .75rem;
 } 
 
-
 .site-button {
     background-color: lightgray;
     border: 2px solid black;
@@ -64,7 +63,7 @@
 
 .btn-outline-black {
     background: white;
-    color: black !important;  /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 2px solid black;
 }
 
@@ -307,6 +306,10 @@ html {
         font-size: large;
     }
 
+    .dropdown-right {
+        padding: 0.25rem 1.5rem 0.25rem 7rem !important;
+    }
+
     /* Home Page */
     .img-up{
         position:relative;
@@ -324,10 +327,6 @@ html {
         padding-left: 0;
     }
 
-    .desc-price {
-        
-    }
-    
     .details-name {
         padding-top: 0%;
     }
@@ -338,7 +337,6 @@ html {
         padding-top: 15%;
     }
 }
-
 
 /* Screens X-Larger  */
 @media (min-width: 1000px) {

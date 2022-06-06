@@ -1,10 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page_header %}
-   
-{% endblock %}
-
 {% block content %}
 <div class="container header-container">
     <div class="row bag">
@@ -20,7 +15,7 @@
             <p>To unsubscribe to our newsletter, please enter your email address and hit the unsubscribe button.
                 Just remember, you can always re-subscribe if you miss our deals!</p>
             <div class="text-right"><span class="asterisk">*</span> indicates required</div>
-            <form action="" method="post">
+            <form method="post">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <input class="btn-outline-black" type="submit" value="Unsubscribe">

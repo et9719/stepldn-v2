@@ -1,14 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
 <div class="container-fluid">
     <div class="row">
@@ -28,7 +19,6 @@
                         </a>
                     {% endif %}
                 </div>
-
                 <div class="col-6 col-md-4 desc"><p class="">{{ product.description }}</p></div>
                 <div class="col-md-3 desc">
                     <p class="font-weight-bold">${{ product.price }}</p>
@@ -43,8 +33,7 @@
         </div>
         <div class="col-12 col-lg-4">
             <h1 class="logo-f details-name">{{ product.name }}</h1>
-            <br>
-           
+            <br>   
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
@@ -88,7 +77,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col{% if s %}-12 mt-2{% endif %}">
                         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                             <span class="icon">
@@ -105,7 +93,7 @@
         </div>
         <div class="row reviews w-100">
             <div class="col-12 col-md-6 bg-color">
-                <h3 class="logo-f leave-review">Reviews</h2>
+                <h3 class="logo-f leave-review">Reviews</h3>
                 <hr>
                 {% for review in reviews %}
                     <div>
@@ -138,7 +126,6 @@
     </div>
 </div>
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}

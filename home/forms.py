@@ -9,10 +9,3 @@ class NewsForm(ModelForm):
         ''' Get fields from newsletter model '''
         model = Subscribe
         fields = '__all__'
-
-# class UnsubscribeForm(ModelForm):
-#     ''' Form for users to unsubscribe to the news letter '''
-#     class Meta:
-#         ''' Get fields from newsletter model '''
-#         model = Subscribe
-#         fields = '__all__'

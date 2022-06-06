@@ -2,7 +2,7 @@
 
 ## Introduction
 
-StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project i will set up an authentication mechanism that allows you users to purchase the products. If the user id logged in as a site damin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
+StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project I will set up an authentication mechanism that allows you users to purchase the products. If the user id logged in as a site admin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
 
 <img src="media/readme_media/amiresponsive.png" alt="Live website image">
 
@@ -87,7 +87,7 @@ StepLDN is an e-commerce store created for customers looking to get a new pair o
 <img src="media/readme_media/orderhistory-wireframe.png" alt="wireframe for order history page">
 <img src="media/readme_media/orderhistory-mobile.png" alt="mobile wireframe for order history page">
 
-In the interest of time, I ended up having one page to show both the account details and order history, but would like to impliment the my accounts page as shown in the wireframe along with the seperate my details page and order history page in my own time.
+In the interest of time, I ended up having one page to show both the account details and order history, but would like to implement the my accounts page as shown in the wireframe along with the separate my details page and order history page in my own time.
 
 [Table of contents](#table-of-contents)
 
@@ -150,7 +150,7 @@ This helped me break the project down into smaller tasks that would be more mana
     - Was this achieved?
         - Yes
     - How was this achieved?
-        - Again this was done with two views, one to allow the user to adust the quantity of the items and another to delete the item from the bag.
+        - Again this was done with two views, one to allow the user to adjust the quantity of the items and another to delete the item from the bag.
 
 - I want a summery of what is currently in the users shopping cart on the checkout page.
     - Was this achieved?
@@ -181,17 +181,17 @@ This helped me break the project down into smaller tasks that would be more mana
     - How was this achieved?
         - In the home app there is a model 'subscribe' that is used in the index view, this view takes the users email address.
 
-- I want the users to be able to leave a message for the site owner to read.
+- I want the users to be able to leave a message for the admin to read.
     - Was this achieved?
-        - <!-- Half done, user can leave messgae, site owner cannot read this on site yet. -->
+        - Yes 
     - How was this achieved?
-        - In the contact app there is a form the users can fill out, which they can find on contact.html page by clicking the contact us link in the footer. <!-- Add how the site owner can read this once done. -->
+        - In the contact app there is a form the users can fill out, which they can find on contact.html page by clicking the contact us link in the footer. When they fill out the contact form it saves in the admin for the site owner to read.
 
 - I want the users to be able to leave a comment on a product.
     - Was this achieved?
-        - <!-- Not yet. -->
+        - Yes
     - How was this achieved?
-        <!-- Add this once done -->
+        Under every product in the product details pages, there is a section where a user can leave a review for a product you can see this in the product app.
 
 [Table of contents](#table-of-contents)
  
@@ -202,12 +202,12 @@ This helped me break the project down into smaller tasks that would be more mana
 - The navigation bar contains the links needed to use the website easily. This changes how it looks depending on the size of the screen it is being viewed on. 
     - On both the mobile and larger screen versions the brand logo is a link back to the home page. 
     - There is a search bar for users to search for products. On the mobile version this is in the for of a toggle button, so when you click on the search icon a search bar pops up below. 
-    - The my account button's dropdown changes depending on if the user is loged in or out but also if the user is a site admin it is also slightly different. 
+    - The my account button's dropdown changes depending on if the user is logged in or out but also if the user is a site admin it is also slightly different. 
     When the user is logged in they see my profile and logout, however if the user is a site admin they also see product management. 
     If the user is logged out they see register and login buttons.
     - The bag item takes the user to their shopping bag and the number below also changes when items are added to the bag.
-    - each button in the navigation bar has a dropdown that shows more specific categories within each category(mens, womens, childrens) except for accesories as there is one page for all accessories.
-    These buttons cant be seen imediatly on the mobile version of the navigation as the user will have to click on the toggle button to see them, this is to save screen space.
+    - each button in the navigation bar has a dropdown that shows more specific categories within each category(men's, women's, children's) except for accessories as there is one page for all accessories.
+    These buttons cant be seen immediately on the mobile version of the navigation as the user will have to click on the toggle button to see them, this is to save screen space.
 <img src="media/readme_media/feature-navbar.png" alt="Navigation bar functions">
 <img src="media/readme_media/feature-dropdown.png" alt="Navigation dropdown function">
 <img src="media/readme_media/feature-navbar-mobile.png" alt="Mobile version of the navigation bar functions">
@@ -219,7 +219,7 @@ This helped me break the project down into smaller tasks that would be more mana
 - The footer shows at the bottom of every page.
     - It includes social media links in the form of icons.
     - Links that lead to the terms & conditions, privacy policy and also a link to the site map.
-    - The footer also has a section for users to contact the site owners in multiple way, via email, phone or also if they follow the 'via the site' link it takes them to a page where they can leave a message for the site owners through the website itsself.
+    - The footer also has a section for users to contact the site owners in multiple way, via email, phone or also if they follow the 'via the site' link it takes them to a page where they can leave a message for the site owners through the website itself.
 
 <img src="media/readme_media/feature-footer.png" alt="Footer functions">
 
@@ -227,7 +227,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Contact
 
-- When the link in the footer is followed to the contact page it brings the user to this form thtat they can submit to the admin. 
+- When the link in the footer is followed to the contact page it brings the user to this form that they can submit to the admin. 
 
 <img src="media/readme_media/feature-contact.png" alt="contact function">
 
@@ -235,7 +235,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Newsletter
 
--  On the home page there is a form that users can leave there email to sign up for a newsletter.
+-  On the home page there is a form that users can leave their email to sign up for a newsletter.
 
 <img src="media/readme_media/feature-newsletter.png" alt="Newsletter function">
 
@@ -243,7 +243,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Create Account Feature
 
-- When a user clickes on the my account button in the navbar and then clicks on register, it brings them to the create an account page, this is a form for the user to fill out which allows them to create an account so they can keep there details saved and view previous orders.
+- When a user clicks on the my account button in the navbar and then clicks on register, it brings them to the create an account page, this is a form for the user to fill out which allows them to create an account so they can keep there details saved and view previous orders.
 
 <img src="media/readme_media/feature-create.png" alt="Create account function">
 
@@ -259,7 +259,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Sign Out Feature
 
-- The sign out page allows users to sign out of there account if they are already signed in.
+- The sign out page allows users to sign out of their account if they are already signed in.
 
 <img src="media/readme_media/feature-signout.png" alt="Sign out function">
 
@@ -267,7 +267,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Profile
 
-- On the my profile page you can view your current saved delivery information, you can also update this by typing your changes into the fields provided anf hitting the update information button
+- On the my profile page you can view your current saved delivery information, you can also update this by typing your changes into the fields provided and hitting the update information button
 
 <img src="media/readme_media/feature-profile.png" alt="Profile functions">
 <img src="media/readme_media/feature-profile2.png" alt="Profile function">
@@ -276,7 +276,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Order History
 
-- Within the saem page as the profile details, just underneither you can view your oreder history if you have made any previous orders on the same account.
+- Within the same page as the profile details, just underneath you can view your order history if you have made any previous orders on the same account.
 
 <img src="media/readme_media/feature-order-history.png" alt="Order history function">
 
@@ -286,7 +286,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 - On the product detail page you can view the individual product, its description and price. 
     - You can choose the size of the product.
-    - You can choose the quantitiy of the product.
+    - You can choose the quantity of the product.
     - At the bottom of the page you can choose to either add this item to your bag or go back to the products page to view other items.
 
 <img src="media/readme_media/feature-product-details.png" alt="Product detail functions">
@@ -305,7 +305,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ### Edit Products
 
-- If the user is a site admin the can edit exsisting products by clicking the edit button that will only show for them below the product images on both the products pages and products details pages. This page gives the admin a pre filled form they can edit to change the products details.
+- If the user is a site admin the can edit existing products by clicking the edit button that will only show for them below the product images on both the products pages and products details pages. This page gives the admin a pre filled form they can edit to change the products details.
     - There will also be a delete button next to all edit buttons if the admin would like to delete the product all together.
 
 <img src="media/readme_media/feature-edit-product.png" alt="Add product functions">
@@ -320,7 +320,7 @@ This helped me break the project down into smaller tasks that would be more mana
     - You can change the quantity of the items in the bag by using the + and - buttons and pressing update.
     - You can also remove the item from the bag by clicking remove. 
 - You can also view a quick summery of all the items in the bag.
-- At teh bottom of the summery you have two choices, you can either click keep shopping to view more items or checkout which will take you to the ckeckout page.
+- At the bottom of the summery you have two choices, you can either click keep shopping to view more items or checkout which will take you to the checkout page.
 - At the bottom of the summery if you have less than £50 worth of items in the bag it will tell you how much more you would need to spend if you want free delivery. This is because there is a banner that states users get free delivery if they spend £50 or more.
 
 <img src="media/readme_media/feature-bag.png" alt="Add product functions">
@@ -330,7 +330,7 @@ This helped me break the project down into smaller tasks that would be more mana
 ### Checkout Feature
 
 - On the checkout page you get a view of the order summery first
-- Then you see your order information, if you are logged into a profile that has details saved these details will pre fill for you, and you will just have to fill in your name and carad details.
+- Then you see your order information, if you are logged into a profile that has details saved these details will pre fill for you, and you will just have to fill in your name and card details.
 - The stripe payment function allows users to make a purchase, by filling out the details and hitting complete order.
 - There is also a button for the user to adjust the bag if they would like to make any changes before completing the order. 
 
@@ -342,7 +342,7 @@ This helped me break the project down into smaller tasks that would be more mana
 
 ## SEO
 
-To improve the search engine optimisation of the site I have added some keywords in a meta tag  to my base.html. I used WordTracker to research these short-tail and long-tail keywords to find out which words had the least competition.
+To improve the search engine optimisation of the site I have added some keywords in a meta tag to my base.html. I used WordTracker to research these short-tail and long-tail keywords to find out which words had the least competition.
 
 This is a list of all the keywords I came up with shoes, laces, footwear, sandles, nike shoes, new shoes, jorden shoes, running shoes, womens shoes, mens shoes, childrens shoes, converse shoes, shoe store, shoe shop, blue suade, shoe cleaner, shoes london, buy high quality shoes, buy comfortable shoes, shoes for children, shoes for men, shoes for women, shoe shop online.
 
@@ -378,7 +378,6 @@ I ended up using these:
 - Shoe website 
 - Elastic laces
 
-
 <img src="media/readme_media/seo15.png" alt="Implimented seo">
 <img src="media/readme_media/seo16.png" alt="Implimented seo">
 <img src="media/readme_media/seo17.png" alt="Implimented seo">
@@ -392,7 +391,7 @@ I decided to use email marketing and social media marketing for my site, these a
 
 Email marketing - Using email marketing is a great way to gain returning customers and increase sales, in the emails I can give the users discount codes and point out special offers to bring back paying customers to the site.
 
-Social media - Using social media plateforms is a great way for a company to build a brand, it is a great way to interact with customers and this will help build relationships and loyalty, followers tend to share posts which will help gain more attraction to the site.
+Social media - Using social media platforms is a great way for a company to build a brand, it is a great way to interact with customers and this will help build relationships and loyalty, followers tend to share posts which will help gain more attraction to the site.
 
 <img src="media/readme_media/fb-page.png" alt="Image of the facebook page">
 <img src="media/readme_media/fb-info.png" alt="Infomation on the facebook page">
@@ -412,10 +411,10 @@ The following errors/warnings were found:
 
 <img src="media/readme_media/html-home.png" alt="Testing HTML for home page">
 
-1. <!-- Add errors -->
-    - To fix this I
+1. My form had an empty action tag.
+    - To fix this I removed the tag as it was not needed.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: Error cleared
 
 ### Bag
 
@@ -441,26 +440,10 @@ The following errors/warnings were found:
 
 <img src="media/readme_media/html-contact.png" alt="Testing HTML for the contact page">
 
-1. <!-- Add errors -->
-    - To fix this I
+1. My form had an empty action tag.
+    - To fix this I removed the tag as it was not needed.
 
-Retested: <!-- /Error/Warning cleared -->
-
-### Contact Success
-
-<!-- ######## NOT WORKING ####### -->
-
-The following errors/warnings were found:
-
-
-<!-- html-contact-success.png doesnt exsit yet -->
-<img src="media/readme_media/html-contact-success.png" alt="Testing HTML for the contact success page">
-
-1. <!-- Add errors -->
-    - To fix this I
-
-Retested: <!-- /Error/Warning cleared -->
-
+Retested: Error cleared
 
 ### Unsubscribe
 
@@ -468,10 +451,10 @@ The following errors/warnings were found:
 
 <img src="media/readme_media/html-unsubscribe.png" alt="Testing HTML for the unsubscribe page">
 
-1. <!-- Add errors -->
-    - To fix this I
+1. My form had an empty action tag.
+    - To fix this I removed the tag as it was not needed.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: Error cleared
 
 ### Add Product
 
@@ -515,10 +498,10 @@ The following errors/warnings were found:
 
 <img src="media/readme_media/html-logout.png" alt="Testing HTML for the logout page">
 
-1. <!-- Add errors -->
-    - To fix this I
+1. My form had an empty action tag.
+    - To fix this I removed the tag as it was not needed.
 
-Retested: <!-- /Error/Warning cleared -->
+Retested: Error cleared
 
 ### Sign Up
 
@@ -537,18 +520,13 @@ No errors were found:
 
 <img src="media/readme_media/css-base.png" alt="Testing css for base.css">
 
-<!-- Warnings ? -->
-
 ### checkout.css
 
 <img src="media/readme_media/css-checkout.png" alt="Testing css for checkout.css">
 
-<!-- Warnings ? -->
-
 ### profile.css
 
 <img src="media/readme_media/css-profile.png" alt="Testing css for profile.css">
-
 
 ## Python
  
@@ -571,7 +549,7 @@ The following errors/warnings were found:
 <img src="media/readme_media/checkout-webhooks.png" alt="Testing python for the checkout app">
 
 1. All of these errors came form lines being too long 
-    - To fix this I edited the line so that it was writen over a couple of lines instead.
+    - To fix this I edited the line so that it was written over a couple of lines instead.
 
 Retested: All errors cleared.
 
@@ -586,7 +564,7 @@ The following errors/warnings were found:
 <img src="media/readme_media/products-widgets.png" alt="Testing python for the products app">
 
 1. All of these errors came form lines being too long 
-    - To fix this I edited the line so that it was writen over a couple of lines instead.
+    - To fix this I edited the line so that it was written over a couple of lines instead.
 
 Retested: All errors cleared
 
@@ -602,16 +580,6 @@ The following errors/warnings were found:
 
 Retested: All errors cleared
 
-### Stepldn
-
-#### settings
-<img src="media/readme_media/settings.png" alt="Testing python for the stepldn app">
-
-1. These errors came form lines being too long.
-    - To fix this I <!-- fix them -->
-
-Retested: <!-- /Error/Warning cleared -->
-
 ## Manual Testing 
 
 
@@ -622,21 +590,20 @@ Navbar: Search bar | Search for products | Yes | N/A
 Navbar: My account/ Register | Takes user to create account page | Yes | N/A
 Navbar: My account/ Login | Takes user to the sign in page  | Yes | N/A
 Navbar: My account/ Logout | Takes user to the log out page  | Yes | N/A
-Navbar: Mens/ All products | Takes user to all mens shoes | Yes | N/A
-Navbar: Mens/ Trainers | Takes user to mens trainers  | Yes | N/A
-Navbar: Mens/ Flipflops | Takes user to mens Flipflops  | Yes | N/A
-Navbar: Womens/ All products | Takes user to all womens shoes | Yes | N/A
-Navbar: Womens/ Trainers | Takes user to womens trainers  | Yes | N/A
-Navbar: Womens/ Flipflops | Takes user to womens Flipflops  | Yes | N/A
-Navbar: Childrens/ All products | Takes user to all childrens shoes | Yes | N/A
-Navbar: Childrens/ Trainers | Takes user to childrens trainers  | Yes | N/A
-Navbar: Childrens/ Flipflops | Takes user to childrens Flipflops  | Yes | N/A
+Navbar: Men's/ All products | Takes user to all mens shoes | Yes | N/A
+Navbar: Men's/ Trainers | Takes user to men's trainers  | Yes | N/A
+Navbar: Mens/ Flipflops | Takes user to men's Flipflops  | Yes | N/A
+Navbar: Women's/ All products | Takes user to all women's shoes | Yes | N/A
+Navbar: Women's/ Trainers | Takes user to women's trainers  | Yes | N/A
+Navbar: Women's/ Flipflops | Takes user to women's Flipflops  | Yes | N/A
+Navbar: Children's/ All products | Takes user to all children's shoes | Yes | N/A
+Navbar: Children's/ Trainers | Takes user to children's trainers  | Yes | N/A
+Navbar: Children's/ Flipflops | Takes user to children's Flipflops  | Yes | N/A
 Home: Subscribe form | Allows user to sign up to newsletter  | No | Yes
 Home: I want to unsubscribe | Takes user to unsubscribe page | Yes | N/A
 Footer: Social buttons | Takes user to those social media sites  | Yes | N/A
 Footer: T & C | Takes user to terms and conditions  | Yes | N/A
 Footer: Privacy policy | Takes user to privacy policy | Yes | N/A
-Footer: Site map | Takes user to site map | <!--# --> | <!--# --> 
 Footer: Via the site | Takes user Contact us page | Yes | N/A
 Products: Product | Takes user to Product detail page | Yes | N/A
 Products/Product details: Edit | Takes admin to Edit product page | Yes | N/A
@@ -644,7 +611,7 @@ Products/Product details: Delete | Allows admin to delete product | Yes | N/A
 Product details/Bag: Quantity buttons | add or takes away number of items with + or - buttons | Yes | N/A
 Product details: Add to bag | Adds item to users bag | Yes | N/A
 Product details: Keep shopping | Takes user all products page | Yes | N/A
-Product management: Cancel | Takes Admin to all produtcts page | Yes | N/A
+Product management: Cancel | Takes Admin to all products page | Yes | N/A
 Product management: Select img | Allows admin to select product image | Yes | N/A
 Product management: Add product | Adds product | Yes | N/A
 Product management: Edit product | Updates product information | Yes | N/A
@@ -654,7 +621,7 @@ Log out: No  | Takes user to all products page | Yes | N/A
 Log out: Yes | Logs user out | Yes | N/A
 Sign up: Sign up | Create user account | Yes | N/A
 Sign in: Sign in | Signs user in | Yes | N/A
-Sign in: Register now | Takes user to sign up page | No | <!-- Fix -->
+Sign in: Register now | Takes user to sign up page | No | Yes
 Bag: Keep shopping | Takes user to all products page | Yes | N/A
 Bag: Update | Updates quantity of item | Yes | N/A
 Bag: Remove | Deletes item | Yes | N/A
@@ -670,26 +637,11 @@ Unsubscribe: Unsubscribe | Removes users email | No | Yes
 
 ## Bugs
 
-I ran into this error message:
+For a while I was having problems figuring out why some of my site would work through github but not through heroku.
 
-<img src="#" alt="error message">
+I realised that I hadn't pushed the new newsletter, contact and review models through to heroku I had only pushed them to github.
 
-I realised that I was missing #
-
-This is how it rendered:	
-
-<img src="#" alt="image of how page was rendering incorrectly">
-
-I originally had written #
-so I tried this:
-
-<img src="#" alt="image of how I tried to fix">
-
-This didnt work so I also tried:
-
-<img src="#" alt="image of how I tried to fix">
-
-Then I noticed #
+To fix this I pushed it to heroku with git push heroku main and it all worked okay. 
 
 ## Deployment
 
@@ -709,6 +661,8 @@ DATABASES = {
 - run migrations
 
 ## Credits
+
+Thankyou to Marcel, my mentor for helping my through my project.
 
 The run through project was helpful for getting me through the project.
 

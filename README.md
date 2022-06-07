@@ -6,7 +6,7 @@ StepLDN is an e-commerce store created for customers looking to get a new pair o
 
 <img src="media/readme_media/amiresponsive.png" alt="Live website image">
 
-[Click here to go to the live website!](https://steplondon.herokuapp.com/<!-- Change before submittion -->) 
+[Click here to go to the live website!](https://steplondon.herokuapp.com/) 
 
 ## Table of contents
 
@@ -642,6 +642,7 @@ Checkout success: Shop again | Takes user to all products page | Yes | N/A
 Contact: Submit | Submits form to admin | No | Yes
 Unsubscribe: I want to stay subscribed | Takes user to home page | Yes | N/A
 Unsubscribe: Unsubscribe | Removes users email | No | Yes
+Product-details: Review | When user fills in form and presses submit, this will be submitted to the admin.Once admin has approved you should see this on site. | Yes | N/A
 
 
 ## Bugs

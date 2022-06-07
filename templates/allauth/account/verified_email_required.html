@@ -5,26 +5,27 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-<div class="row white-container">
-    <div class=""></div>
+<div class="container header-container">
+    <div class="row s-white-container">
+        <div class=""></div>
+    </div>
+    <div class="row bg-color out bottom-m">
+        <div class="col-10 offset-1 col-md-8 text-center box-up box-container">
+            <h1>{% trans "Verify Your E-mail Address" %}</h1>
+
+            {% url 'account_email' as email_url %}
+            
+            <p>{% blocktrans %}This part of the site requires us to verify that
+            you are who you claim to be. For this purpose, we require that you
+            verify ownership of your e-mail address. {% endblocktrans %}</p>
+            
+            <p>{% blocktrans %}We have sent an e-mail to you for
+            verification. Please click on the link inside this e-mail. Please
+            contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+            
+            <p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{ email_url }}">change your e-mail address</a>.{% endblocktrans %}</p>
+            
+        </div>
+    </div>
 </div>
-<div class="row white-container">
-    <div class=""></div>
-</div>
-
-<h1>{% trans "Verify Your E-mail Address" %}</h1>
-
-{% url 'account_email' as email_url %}
-
-<p>{% blocktrans %}This part of the site requires us to verify that
-you are who you claim to be. For this purpose, we require that you
-verify ownership of your e-mail address. {% endblocktrans %}</p>
-
-<p>{% blocktrans %}We have sent an e-mail to you for
-verification. Please click on the link inside this e-mail. Please
-contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
-
-<p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{ email_url }}">change your e-mail address</a>.{% endblocktrans %}</p>
-
-
 {% endblock %}

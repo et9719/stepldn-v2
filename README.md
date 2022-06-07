@@ -2,7 +2,7 @@
 
 ## Introduction
 
-StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project I will set up an authentication mechanism that allows you users to purchase the products. If the user id logged in as a site admin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
+StepLDN is an e-commerce store created for customers looking to get a new pair of shoes. The users will be able to purchase shoes and shoe accessories on the website. This project will use the following languages and frameworks: Django, Python, HTML, CSS and JavaScript. In the project I will set up an authentication mechanism that allows you users to purchase the products. If the user is logged in as a site admin they will also be able to create new products, see those new products show for everyone, update existing products and delete a product all together giving them full CRUD functionality over the products on the site.
 
 <img src="media/readme_media/amiresponsive.png" alt="Live website image">
 

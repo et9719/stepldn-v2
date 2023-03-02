@@ -6,7 +6,7 @@ StepLDN is an e-commerce store created for customers looking to get a new pair o
 
 <img src="media/readme_media/amiresponsive.png" alt="Live website image">
 
-[Click here to go to the live website!](https://steplondon.herokuapp.com/) 
+[Click here to go to the live website!](https://stepldn.onrender.com) 
 
 ## Table of contents
 
